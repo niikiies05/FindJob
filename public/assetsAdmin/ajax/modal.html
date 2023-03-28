@@ -1,0 +1,690 @@
+<h5>Bootstrap Modal</h5>
+<p class="text-muted font-size-sm">
+  Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.
+</p>
+<div class="card card-style-1">
+  <div class="card-body">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Basic demo</td>
+          <td><button type="button" class="btn btn-sm btn-faded-primary" data-toggle="modal" data-target="#basicModal">Launch Modal</button></td>
+        </tr>
+        <tr>
+          <td>Scrolling long content</td>
+          <td><button type="button" class="btn btn-sm btn-faded-primary" data-toggle="modal" data-target="#scrollingModal">Launch Modal</button></td>
+        </tr>
+        <tr>
+          <td class="nostretch">Scrollable fixed content</td>
+          <td><button type="button" class="btn btn-sm btn-faded-primary" data-toggle="modal" data-target="#scrollableModal">Launch Modal</button></td>
+        </tr>
+        <tr>
+          <td>Tooltips and popovers</td>
+          <td><button type="button" class="btn btn-sm btn-faded-primary" data-toggle="modal" data-target="#tpModal">Launch Modal</button></td>
+        </tr>
+        <tr>
+          <td>Vertically centered</td>
+          <td><button type="button" class="btn btn-sm btn-faded-primary" data-toggle="modal" data-target="#verticalModal">Launch Modal</button></td>
+        </tr>
+        <tr>
+          <td>Small modal</td>
+          <td><button type="button" class="btn btn-sm btn-faded-primary" data-toggle="modal" data-target="#smModal">Launch Modal</button></td>
+        </tr>
+        <tr>
+          <td>Large modal</td>
+          <td><button type="button" class="btn btn-sm btn-faded-primary" data-toggle="modal" data-target="#lgModal">Launch Modal</button></td>
+        </tr>
+        <tr>
+          <td>Extra large modal</td>
+          <td><button type="button" class="btn btn-sm btn-faded-primary" data-toggle="modal" data-target="#xlModal">Launch Modal</button></td>
+        </tr>
+        <tr>
+          <td>No animation</td>
+          <td><button type="button" class="btn btn-sm btn-faded-primary" data-toggle="modal" data-target="#noanimationModal">Launch Modal</button></td>
+        </tr>
+        <tr>
+          <td>Side modals</td>
+          <td>
+              <button type="button" class="btn btn-sm btn-faded-primary mb-1" data-toggle="modal" data-target="#topModal">Top</button>
+              <button type="button" class="btn btn-sm btn-faded-primary mb-1" data-toggle="modal" data-target="#rightModal">Right</button>
+              <button type="button" class="btn btn-sm btn-faded-primary mb-1" data-toggle="modal" data-target="#bottomModal">Bottom</button>
+              <button type="button" class="btn btn-sm btn-faded-primary mb-1" data-toggle="modal" data-target="#leftModal">Left</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<hr class="my-5">
+
+<h5>BootboxJS</h5>
+<p class="text-muted font-size-sm">
+  Bootbox.js is a small JavaScript library which allows you to create programmatic dialog boxes using Bootstrap modals, without having to worry about creating, managing, or removing any of the required DOM elements or JavaScript event handlers.
+</p>
+<div class="card card-style-1">
+  <div class="card-body">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Alert</td>
+          <td>
+            <div class="list-with-gap">
+              <button type="button" id="alertBasic" class="btn btn-faded-primary">Basic</button>
+              <button type="button" id="alertCallback" class="btn btn-faded-primary">With Callback</button>
+              <button type="button" id="alertSmall" class="btn btn-faded-primary">Small Dialog</button>
+              <button type="button" id="alertLarge" class="btn btn-faded-primary">Large Dialog</button>
+              <button type="button" id="alertExtraLarge" class="btn btn-faded-primary">Extra Large Dialog</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Confirm</td>
+          <td>
+            <div class="list-with-gap">
+              <button type="button" id="confirmBasic" class="btn btn-faded-primary">Basic</button>
+              <button type="button" id="confirmCustom" class="btn btn-faded-primary">Custom Buttons</button>
+              <button type="button" id="confirmIcon" class="btn btn-faded-primary">With Icon</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Prompt</td>
+          <td>
+            <div class="list-with-gap">
+              <button type="button" id="promptBasic" class="btn btn-faded-primary">Basic</button>
+              <button type="button" id="promptCheckbox" class="btn btn-faded-primary">Checkbox</button>
+              <button type="button" id="promptRadio" class="btn btn-faded-primary">Radio</button>
+              <button type="button" id="promptPassword" class="btn btn-faded-primary">Password</button>
+              <button type="button" id="promptSelect" class="btn btn-faded-primary">Select</button>
+              <button type="button" id="promptSelectMultiple" class="btn btn-faded-primary">Select & Multiple</button>
+              <button type="button" id="promptTextarea" class="btn btn-faded-primary">Textarea</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="nostretch">Custom Dialogs</td>
+          <td>
+            <div class="list-with-gap">
+              <button type="button" id="customLoading" class="btn btn-faded-primary">As "loading" overlay</button>
+              <button type="button" id="customButtons" class="btn btn-faded-primary">Buttons and callbacks</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Basic -->
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="basicModalLabel">Modal title</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scrolling -->
+<div class="modal fade" id="scrollingModal" tabindex="-1" role="dialog" aria-labelledby="scrollingModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="scrollingModalLabel">Modal title</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scrollable -->
+<div class="modal fade" id="scrollableModal" tabindex="-1" role="dialog" aria-labelledby="scrollableModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header shadow-sm">
+        <h5 class="modal-title" id="scrollableModalLabel">Modal title</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+      </div>
+      <div class="modal-footer border-top">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tooltips and popovers -->
+<div class="modal fade" id="tpModal" tabindex="-1" role="dialog" aria-labelledby="tpModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tpModalLabel">Modal title</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h5>Popover in a modal</h5>
+        <p>This <button type="button" class="btn btn-secondary" data-toggle="popover" title="Popover title" data-content="Popover body content is set in this attribute.">button</button> triggers a popover on click.</p>
+        <hr>
+        <h5>Tooltips in a modal</h5>
+        <p><a href="#" data-toggle="tooltip" title="Tooltip">This link</a> and <a href="#" data-toggle="tooltip" title="Tooltip">that link</a> have tooltips on hover.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Vertically centered -->
+<div class="modal fade" id="verticalModal" tabindex="-1" role="dialog" aria-labelledby="verticalModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="verticalModalLabel">Modal title</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Small -->
+<div class="modal fade" id="smModal" tabindex="-1" role="dialog" aria-labelledby="smModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="smModalLabel">Modal title</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Large -->
+<div class="modal fade" id="lgModal" tabindex="-1" role="dialog" aria-labelledby="lgModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="lgModalLabel">Modal title</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Extra Large -->
+<div class="modal fade" id="xlModal" tabindex="-1" role="dialog" aria-labelledby="xlModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="xlModalLabel">Modal title</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- No Animation -->
+<div class="modal" id="noanimationModal" tabindex="-1" role="dialog" aria-labelledby="noanimationModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="noanimationModalLabel">Modal title</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CONTENT TOP -->
+<div class="modal fade modal-content-top" id="topModal" tabindex="-1" role="dialog" aria-labelledby="topModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="topModalLabel">Modal Content Top</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-light" type="button" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary" type="button" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /MODAL CONTENT TOP -->
+
+<!-- MODAL CONTENT RIGHT -->
+<div class="modal fade modal-content-right" id="rightModal" tabindex="-1" role="dialog" aria-labelledby="rightModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rightModalLabel">Modal Content Right</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-light" type="button" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary" type="button" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /MODAL CONTENT RIGHT -->
+
+<!-- MODAL CONTENT BOTTOM -->
+<div class="modal fade modal-content-bottom" id="bottomModal" tabindex="-1" role="dialog" aria-labelledby="bottomModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bottomModalLabel">Modal Content Bottom</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-light" type="button" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary" type="button" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /MODAL CONTENT BOTTOM -->
+
+<!-- MODAL CONTENT LEFT -->
+<div class="modal fade modal-content-left" id="leftModal" tabindex="-1" role="dialog" aria-labelledby="leftModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="leftModalLabel">Modal Content Left</h5>
+        <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+          <i class="material-icons">close</i>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-light" type="button" data-dismiss="modal">Close</button>
+        <button class="btn btn-primary" type="button" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /MODAL CONTENT LEFT -->
+
+<script>
+  var plugins = [
+    '../../plugins/bootbox/bootbox.min.js'
+  ]
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(plugins, script).then(() => {
+
+    const loremIpsum = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'
+
+    bootbox.setDefaults({
+      closeButton: false
+    })
+
+    /***************** BOOTBOX ALERT *****************/
+    document.getElementById('alertBasic').addEventListener('click', () => {
+      bootbox.alert(loremIpsum)
+    })
+    document.getElementById('alertCallback').addEventListener('click', () => {
+      bootbox.alert(loremIpsum, () => {
+        alert('This is the callback')
+      })
+    })
+    document.getElementById('alertSmall').addEventListener('click', () => {
+      bootbox.alert({
+        message: loremIpsum,
+        size: 'sm'
+      })
+    })
+    document.getElementById('alertLarge').addEventListener('click', () => {
+      bootbox.alert({
+        message: loremIpsum,
+        size: 'lg'
+      })
+    })
+    document.getElementById('alertExtraLarge').addEventListener('click', () => {
+      bootbox.alert({
+        message: loremIpsum,
+        size: 'xl'
+      })
+    })
+
+    /***************** BOOTBOX CONFIRM *****************/
+    document.getElementById('confirmBasic').addEventListener('click', () => {
+      bootbox.confirm('This is the default confirm!', result => {
+        alert(`The callback is: ${result}`)
+      })
+    })
+    document.getElementById('confirmCustom').addEventListener('click', () => {
+      bootbox.confirm({
+        message: 'Are you sure want to remove this data ?',
+        buttons: {
+          confirm: {
+            label: 'Yes, I am sure',
+            className: 'btn-danger'
+          },
+          cancel: {
+            label: 'No, Keep the data',
+            className: 'btn-light border-light'
+          }
+        },
+        callback: result => {
+          if (result) {
+            alert('Your data has been removed!')
+          }
+        }
+      })
+    })
+    document.getElementById('confirmIcon').addEventListener('click', () => {
+      const confirmRemove = bootbox.confirm({
+        message: `<h3 class="d-flex align-items-center">
+                    <i class="material-icons text-danger h2 mr-2 mb-0">warning</i>
+                    Warning!
+                  </h3>
+                  Are you sure want to remove this data ?`,
+        buttons: {
+          confirm: {
+            label: 'Proceed',
+            className: 'btn-danger'
+          }
+        },
+        callback: result => {
+          if (result) {
+            alert('Your data has been removed!')
+          }
+        }
+      })
+    })
+
+    /***************** BOOTBOX PROMPT *****************/
+    document.getElementById('promptBasic').addEventListener('click', () => {
+      bootbox.prompt('What is your name ?', result => {
+        if (result) {
+          alert(`Hi ${result}`)
+        }
+      })
+    })
+    document.getElementById('promptCheckbox').addEventListener('click', () => {
+      bootbox.prompt({
+        title: "This is a prompt with a set of checkbox inputs!",
+        value: ['1', '3'],
+        inputType: 'checkbox',
+        inputOptions: [{
+          text: 'Choice One',
+          value: '1',
+        },
+        {
+          text: 'Choice Two',
+          value: '2',
+        },
+        {
+          text: 'Choice Three',
+          value: '3',
+        }],
+        callback: result => {
+          if (result) {
+            alert(`You choose: ${result}`)
+          }
+        }
+      })
+    })
+    document.getElementById('promptRadio').addEventListener('click', () => {
+      bootbox.prompt({
+        title: "This is a prompt with a set of radio inputs!",
+        message: '<p>Please select an option below:</p>',
+        inputType: 'radio',
+        inputOptions: [{
+          text: 'Choice One',
+          value: '1',
+        },
+        {
+          text: 'Choice Two',
+          value: '2',
+        },
+        {
+          text: 'Choice Three',
+          value: '3',
+        }],
+        callback: result => {
+          if (result) {
+            alert(`You choose: ${result}`)
+          }
+        }
+      })
+    })
+    document.getElementById('promptPassword').addEventListener('click', () => {
+      bootbox.prompt({
+        title: "This is a prompt with a password input!",
+        inputType: 'password',
+        callback: result => {
+          if (result) {
+            alert(`Your password is: ${result}`)
+          }
+        }
+      })
+    })
+    document.getElementById('promptSelect').addEventListener('click', () => {
+      bootbox.prompt({
+        show: false,
+        title: "This is a prompt with select!",
+        inputType: 'select',
+        inputOptions: [
+        {
+          text: 'Choose one...',
+          value: '',
+        },
+        {
+          text: 'Choice One',
+          value: '1',
+        },
+        {
+          text: 'Choice Two',
+          value: '2',
+        },
+        {
+          text: 'Choice Three',
+          value: '3',
+        }],
+        callback: result => {
+          if (result) {
+            alert(`You choose: ${result}`)
+          }
+        }
+      })
+      $('.bootbox').on('show.bs.modal', function () {
+        $(this).find('select').addClass('custom-select')
+      }).modal('show')
+    })
+    document.getElementById('promptSelectMultiple').addEventListener('click', () => {
+      bootbox.prompt({
+        show: false,
+        title: "This is a prompt with a multiple select!",
+        inputType: 'select',
+        multiple: true,
+        value: ['1', '3'],
+        inputOptions: [
+        {
+          text: 'Choose one...',
+          value: '',
+        },
+        {
+          text: 'Choice One',
+          value: '1',
+        },
+        {
+          text: 'Choice Two',
+          value: '2',
+        },
+        {
+          text: 'Choice Three',
+          value: '3',
+        }],
+        callback: result => {
+          if (result) {
+            alert(`You choose: ${result}`)
+          }
+        }
+      })
+      $('.bootbox').on('show.bs.modal', function () {
+        $(this).find('select').addClass('custom-select')
+      }).modal('show')
+    })
+    document.getElementById('promptTextarea').addEventListener('click', () => {
+      bootbox.prompt({
+        title: "This is a prompt with a textarea!",
+        inputType: 'textarea',
+        callback: result => {
+          if (result) {
+            alert(`The result is: ${result}`)
+          }
+        }
+      })
+    })
+
+    /***************** BOOTBOX CUSTOM DIALOGS *****************/
+    document.getElementById('customLoading').addEventListener('click', () => {
+      var dialog = bootbox.dialog({
+        message: `<div class="d-flex align-items-center">
+                    <div class="spinner-border spinner-border-sm mr-2"></div> Please wait while we do something...
+                  </div>`
+      })
+      setTimeout(() => {
+        dialog.modal('hide')
+      }, 2000)
+    })
+    document.getElementById('customButtons').addEventListener('click', () => {
+      bootbox.dialog({
+        title: 'A custom dialog with buttons and callbacks',
+        message: "<p>This dialog has buttons. Each button has it's own callback function.</p>",
+        buttons: {
+          cancel: {
+            label: "Cancel!",
+            className: 'btn-danger',
+            callback: () => {
+              alert('Cancel clicked')
+            }
+          },
+          noclose: {
+            label: "I don't close the modal!",
+            className: 'btn-warning',
+            callback: () => {
+              alert('Custom button clicked')
+              return false
+            }
+          },
+          ok: {
+            label: "I'm an OK button!",
+            className: 'btn-info',
+            callback: () => {
+              alert('Custom OK clicked')
+            }
+          }
+        }
+      })
+    })
+
+  }).then(() => App.stopLoading())
+</script>

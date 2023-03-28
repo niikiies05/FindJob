@@ -1,0 +1,633 @@
+<style>
+  .card-example {
+    max-width: 400px;
+  }
+</style>
+<div class="row">
+  <div class="col">
+
+      <!-- Card Block -->
+      <section id="section1">
+        <h5>Card Block</h5>
+        <p class="text-muted font-size-sm">
+          The building block of a card is the <code>.card-body</code>. Use it whenever you need a padded section within a card.
+        </p>
+        <div class="card card-example">
+          <div class="card-body">
+            <p class="card-text">This is some text within a card body.</p>
+          </div>
+        </div>
+      </section>
+      <!-- /Card Block -->
+
+      <hr class="my-5">
+
+      <!-- Card Titles, text, and links -->
+      <section id="section2">
+        <h5>Card Titles, text, and links</h5>
+        <p class="text-muted font-size-sm">
+          Card titles are used by adding <code>.card-title</code> to a <code>&lt;h*&gt;</code> tag.<br>
+          In the same way, links are added and placed next to each other by adding <code>.card-link</code> to an <code>&lt;a&gt;</code> tag.
+        </p>
+        <div class="card card-example">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle text-secondary mb-2">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="javascript:void(0)" class="card-link">Card link</a>
+            <a href="javascript:void(0)" class="card-link">Another link</a>
+          </div>
+        </div>
+      </section>
+      <!-- /Card Titles, text, and links -->
+
+      <hr class="my-5">
+
+      <!-- Card with List groups -->
+      <section id="section3">
+        <h5>Card with List groups</h5>
+        <p class="text-muted font-size-sm">
+          Create lists of content in a card with a flush list group.
+        </p>
+        <div class="card card-example">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, cupiditate.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">List group item</li>
+            <li class="list-group-item">List group item</li>
+            <li class="list-group-item disabled">List group item (disabled)</li>
+          </ul>
+        </div>
+      </section>
+      <!-- /Card with List groups -->
+
+      <hr class="my-5">
+
+      <!-- Card Header -->
+      <section id="section4">
+        <h5>Card Header</h5>
+        <p class="text-muted font-size-sm">
+          Add an optional header within a card.
+        </p>
+        <div class="card card-example">
+          <div class="card-header">Featured</div>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </section>
+      <!-- /Card Header -->
+
+      <hr class="my-5">
+
+      <!-- Card Footer -->
+      <section id="section5">
+        <h5>Card Footer</h5>
+        <p class="text-muted font-size-sm">
+          Add an optional footer within a card.
+        </p>
+        <div class="card card-example">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer text-muted font-size-sm"><i class="material-icons mr-1">access_time</i>10:00</div>
+        </div>
+      </section>
+      <!-- /Card Footer -->
+
+      <hr class="my-5">
+
+      <!-- Color Variation -->
+      <section id="section6">
+        <h5>Color Variation</h5>
+        <p class="text-muted font-size-sm">
+          Choose color variation with the following color options.
+        </p>
+        <div class="card card-example card-primary" id="card-color">
+          <div class="card-header">Featured</div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle text-secondary mb-2">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-footer font-size-sm"><i class="material-icons mr-1">access_time</i>10:00</div>
+        </div>
+        <div class="custom-color custom-color-lg mt-3">
+          <div class="color-item">
+            <input type="radio" name="card-color" value="primary" id="card-primary" class="custom-control-input" checked>
+            <label class="rounded-circle" for="card-primary" style="background-color:#4279ef"></label>
+          </div>
+          <div class="color-item">
+            <input type="radio" name="card-color" value="secondary" id="card-secondary" class="custom-control-input">
+            <label class="rounded-circle" for="card-secondary" style="background-color:#6c757d"></label>
+          </div>
+          <div class="color-item">
+            <input type="radio" name="card-color" value="success" id="card-success" class="custom-control-input">
+            <label class="rounded-circle" for="card-success" style="background-color:#4cc065"></label>
+          </div>
+          <div class="color-item">
+            <input type="radio" name="card-color" value="danger" id="card-danger" class="custom-control-input">
+            <label class="rounded-circle" for="card-danger" style="background-color:#f05a5c"></label>
+          </div>
+          <div class="color-item">
+            <input type="radio" name="card-color" value="warning" id="card-warning" class="custom-control-input">
+            <label class="rounded-circle" for="card-warning" style="background-color:#ffd062"></label>
+          </div>
+          <div class="color-item">
+            <input type="radio" name="card-color" value="info" id="card-info" class="custom-control-input">
+            <label class="rounded-circle" for="card-info" style="background-color:#19aec6"></label>
+          </div>
+          <div class="color-item">
+            <input type="radio" name="card-color" value="dark" id="card-dark" class="custom-control-input">
+            <label class="rounded-circle" for="card-dark" style="background-color:#343a40"></label>
+          </div>
+        </div>
+      </section>
+      <!-- /Color Variation -->
+
+      <hr class="my-5">
+
+      <!-- Card with Tabs Navigation -->
+      <section id="section7">
+        <h5>Card with Tabs Navigation</h5>
+        <p class="text-muted font-size-sm">
+          Add some navigation to a card’s header (or block) with Bootstrap’s nav components.
+        </p>
+        <div class="row gutters-sm">
+          <div class="col-md-6 mb-3">
+            <div class="card text-center">
+              <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body tab-content">
+                <div class="tab-pane show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  home content here
+                </div>
+                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  profile content here
+                </div>
+                <div class="tab-pane" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  contact content here
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card text-center card-primary">
+              <div class="card-header">
+                <ul class="nav nav-dark nav-tabs card-header-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="home2-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="true">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="profile2-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile2" aria-selected="false">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact2-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body tab-content">
+                <div class="tab-pane show active" id="home2" role="tabpanel" aria-labelledby="home2-tab">
+                  home content here
+                </div>
+                <div class="tab-pane" id="profile2" role="tabpanel" aria-labelledby="profile2-tab">
+                  profile content here
+                </div>
+                <div class="tab-pane" id="contact2" role="tabpanel" aria-labelledby="contact2-tab">
+                  contact content here
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card text-center">
+              <div class="card-header">
+                <ul class="nav nav-pills card-header-pills nav-gap-x-1" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="home-pills" data-toggle="tab" href="#home-p" role="tab" aria-controls="home-p" aria-selected="true">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="profile-pills" data-toggle="tab" href="#profile-p" role="tab" aria-controls="profile-p" aria-selected="false">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact-pills" data-toggle="tab" href="#contact-p" role="tab" aria-controls="contact-p" aria-selected="false">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body tab-content">
+                <div class="tab-pane show active" id="home-p" role="tabpanel" aria-labelledby="home-pills">
+                  home content here
+                </div>
+                <div class="tab-pane" id="profile-p" role="tabpanel" aria-labelledby="profile-pills">
+                  profile content here
+                </div>
+                <div class="tab-pane" id="contact-p" role="tabpanel" aria-labelledby="contact-pills">
+                  contact content here
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card text-center card-primary">
+              <div class="card-header">
+                <ul class="nav nav-dark nav-pills card-header-pills nav-gap-x-1" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="home2-pills" data-toggle="tab" href="#home2-p" role="tab" aria-controls="home2-p" aria-selected="true">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="profile2-pills" data-toggle="tab" href="#profile2-p" role="tab" aria-controls="profile2-p" aria-selected="false">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="contact2-pills" data-toggle="tab" href="#contact2-p" role="tab" aria-controls="contact2-p" aria-selected="false">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body tab-content">
+                <div class="tab-pane show active" id="home2-p" role="tabpanel" aria-labelledby="home2-pills">
+                  home content here
+                </div>
+                <div class="tab-pane" id="profile2-p" role="tabpanel" aria-labelledby="profile2-pills">
+                  profile content here
+                </div>
+                <div class="tab-pane" id="contact2-p" role="tabpanel" aria-labelledby="contact2-pills">
+                  contact content here
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Card with Tabs Navigation -->
+
+      <hr class="my-5">
+
+      <!-- Card with Toolbar -->
+      <section id="section8">
+        <h5>Card with Toolbar</h5>
+        <p class="text-muted font-size-sm">
+          Add some useful and functional tools.
+        </p>
+        <div class="row gutters-sm">
+          <div class="col-md-6 mb-3">
+            <div class="card" id="exampe-card-with-toolbar">
+              <div class="card-header">
+                Toolbar
+                <div class="list-with-gap ml-auto">
+                  <span class="badge badge-success">100%</span>
+                  <div class="custom-control custom-control-nolabel custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch">
+                    <label class="custom-control-label" for="customSwitch"></label>
+                  </div>
+                  <button type="button" data-action="fullscreen" class="btn btn-sm btn-text-secondary btn-icon rounded-circle shadow-none">
+                    <i class="material-icons">fullscreen</i>
+                  </button>
+                  <button type="button" data-action="reload" class="btn btn-sm btn-text-success btn-icon rounded-circle shadow-none">
+                    <i class="material-icons">refresh</i>
+                  </button>
+                  <button type="button" data-action="close" class="btn btn-sm btn-text-danger btn-icon rounded-circle shadow-none">
+                    <i class="material-icons">close</i>
+                  </button>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <div class="card-header">
+                Collapsible
+                <div class="list-with-gap ml-auto">
+                  <button type="button" data-action="collapse" data-target="#card-body" data-toggle="collapse" aria-expanded="true" class="btn btn-sm btn-faded-success btn-icon rounded-circle shadow-none">
+                    <i class="material-icons">remove</i>
+                  </button>
+                  <button type="button" data-action="fullscreen" class="btn btn-sm btn-faded-info btn-icon rounded-circle shadow-none">
+                    <i class="material-icons">fullscreen</i>
+                  </button>
+                  <button type="button" data-action="close" class="btn btn-sm btn-faded-danger btn-icon rounded-circle shadow-none">
+                    <i class="material-icons">close</i>
+                  </button>
+                </div>
+              </div>
+              <div class="collapse show" id="card-body">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="card">
+              <div class="card-header">
+                Toolbar
+                <div class="btn-group btn-group-sm ml-auto" role="group">
+                  <button type="button" class="btn btn-light has-icon"><i class="material-icons">print</i></button>
+                  <button type="button" class="btn btn-light has-icon"><i class="material-icons">edit</i></button>
+                  <button type="button" class="btn btn-light has-icon"><i class="material-icons">delete</i></button>
+                </div>
+                <div class="dropdown ml-1">
+                  <button class="btn btn-sm btn-light btn-icon dropdown-toggle no-caret" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons">arrow_drop_down</i>
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton2">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </div>
+                </div>
+                <button type="button" data-action="close" class="ml-1 btn btn-sm btn-light btn-icon">
+                  <i class="material-icons">close</i>
+                </button>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Card with Toolbar -->
+
+      <hr class="my-5">
+
+      <!-- Card Image Top -->
+      <section id="section9">
+        <h5>Card Image Top</h5>
+        <p class="text-muted font-size-sm">
+          <code>.card-img-top</code> places an image to the top of the card. With <code>.card-text</code>, text can be added to the card.<br>
+          Text within <code>.card-text</code> can also be styled with the standard HTML tags.
+        </p>
+        <div class="card card-example">
+          <img class="card-img-top" src="../img/gallery/10m.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </section>
+      <!-- /Card Image Top -->
+
+      <hr class="my-5">
+
+      <!-- Card Image Bottom -->
+      <section id="section10">
+        <h5>Card Image Bottom</h5>
+        <p class="text-muted font-size-sm">
+          <code>.card-img-bottom</code> places an image to the bottom of the card. With <code>.card-text</code>, text can be added to the card.<br>
+          Text within <code>.card-text</code> can also be styled with the standard HTML tags.
+        </p>
+        <div class="card card-example">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <img class="card-img-bottom" src="../img/gallery/4m.jpeg" alt="Card image cap">
+        </div>
+      </section>
+      <!-- /Card Image Bottom -->
+
+      <hr class="my-5">
+
+      <!-- Card Image Overlays -->
+      <section id="section11">
+        <h5>Card Image Overlays</h5>
+        <p class="text-muted font-size-sm">
+          Turn an image into a card background and overlay your card’s text.<br>
+          Depending on the image, you may or may not need additional styles or utilities.
+        </p>
+        <div class="card text-white border-0 card-example">
+          <img class="card-img" src="../img/gallery/4m.jpeg" alt="Card image cap">
+          <div class="card-img-overlay">
+            <h4 class="card-title">Card title</h4>
+            <h6 class="card-subtitle mb-2">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content... <u><a href="javascript:void(0)" class="text-white">read more</a></u></p>
+          </div>
+        </div>
+      </section>
+      <!-- /Card Image Overlays -->
+
+      <hr class="my-5">
+
+      <!-- Card Groups -->
+      <section id="section12">
+        <h5>Card Groups</h5>
+        <p class="text-muted font-size-sm">
+          Use card groups to render cards as a single, attached element with equal width and height columns.<br>
+          Card groups use <code>display: flex;</code> to achieve their uniform sizing.
+        </p>
+        <div class="card-group">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer small text-muted">Last updated 3 mins ago</div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer small text-muted">Last updated 3 mins ago</div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer small text-muted">Last updated 3 mins ago</div>
+          </div>
+        </div>
+      </section>
+      <!-- /Card Groups -->
+
+      <hr class="my-5">
+
+      <!-- Card Decks -->
+      <section id="section13">
+        <h5>Card Decks</h5>
+        <p class="text-muted font-size-sm">
+          Need a set of equal width and height cards that aren’t attached to one another? Use card decks.
+        </p>
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer small text-muted">Last updated 3 mins ago</div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer small text-muted">Last updated 3 mins ago</div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer small text-muted">Last updated 3 mins ago</div>
+          </div>
+        </div>
+      </section>
+      <!-- /Card Decks -->
+
+      <hr class="my-5">
+
+      <!-- Card Columns -->
+      <section id="section14">
+      <h5>Card Columns</h5>
+      <p class="text-muted font-size-sm">
+        Cards can be organized into Masonry-like columns with just CSS by wrapping them in <code>.card-columns</code>.<br>
+        Cards are built with CSS <code>column</code> properties instead of flexbox for easier alignment.<br>
+        Cards are ordered from top to bottom and left to right.
+      </p>
+      <div class="card-columns">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+        <div class="card p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card bg-primary text-white text-center p-3">
+          <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+            <footer class="blockquote-footer text-white">
+              <small>
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card border-0">
+          <img class="card-img" src="../img/gallery/4m.jpeg" alt="Card image cap">
+        </div>
+        <div class="card p-3 text-right">
+          <blockquote class="blockquote mb-0">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      </section>
+      <!-- /Card Columns -->
+
+    </div>
+
+  <div class="col-3 d-none d-xl-block">
+    <div class="nav-section">
+      <label class="text-muted">On This Page</label>
+      <nav id="navSection" class="nav flex-column">
+        <a href="#section1" class="nav-link nav-link-sm">Card Block</a>
+        <a href="#section2" class="nav-link nav-link-sm">Card Titles, text, and links</a>
+        <a href="#section3" class="nav-link nav-link-sm">Card with List groups</a>
+        <a href="#section4" class="nav-link nav-link-sm">Card Header</a>
+        <a href="#section5" class="nav-link nav-link-sm">Card Footer</a>
+        <a href="#section6" class="nav-link nav-link-sm">Color Variation</a>
+        <a href="#section7" class="nav-link nav-link-sm">Card with Tabs Navigation</a>
+        <a href="#section8" class="nav-link nav-link-sm">Card with Toolbar</a>
+        <a href="#section9" class="nav-link nav-link-sm">Card Image Top</a>
+        <a href="#section10" class="nav-link nav-link-sm">Card Image Bottom</a>
+        <a href="#section11" class="nav-link nav-link-sm">Card Image Overlays</a>
+        <a href="#section12" class="nav-link nav-link-sm">Card Groups</a>
+        <a href="#section13" class="nav-link nav-link-sm">Card Decks</a>
+        <a href="#section14" class="nav-link nav-link-sm">Card Columns</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script>
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(null, script).then(() => {
+
+    // Change card color variation
+    for (const color of document.querySelectorAll('input[name="card-color"]')) {
+      color.addEventListener('change', function () {
+        document.querySelector('#card-color').className = 'card card-example card-' + color.value
+      })
+    }
+
+    /***************** CARD RELOAD *****************/
+    document.getElementById('exampe-card-with-toolbar').addEventListener('card:reload', function () {
+      var thisCard = this
+
+      // YOUR ACTION HERE
+
+      // do nothing for a second (this is only for demo)
+      setTimeout(() => {
+        App.stopCardLoader(thisCard) // when done, run this function
+      }, 1000)
+    })
+
+  }).then(() => App.stopLoading())
+</script>

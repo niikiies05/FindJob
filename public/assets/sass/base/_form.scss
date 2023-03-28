@@ -1,0 +1,50 @@
+// ----------------------------------------------------------------------
+// CUSTOMIZE THE BOOTSTRAP MODAL + INPUT FORM ELEMENT + BUTTON + ALERT
+// ----------------------------------------------------------------------
+
+form input[type="text"], form input[type="email"], form input[type="password"] {
+  //height: 40px;
+}
+
+
+
+
+// Checkboxes
+//
+// Tweak just a few things for checkboxes.
+
+.custom-checkbox {
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::before {
+      @include gradient-bg($brand-primary);
+    }
+
+  }
+
+  .custom-control-input:indeterminate ~ .custom-control-label {
+    &::before {
+      @include gradient-bg($brand-primary);
+    }
+
+  }
+}
+
+// Radios
+//
+// Tweak just a few things for radios.
+
+.custom-radio {
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::before {
+      @include gradient-bg($brand-primary);
+    }
+  }
+
+  .custom-control-input:disabled {
+    &:checked ~ .custom-control-label::before {
+      background-color: rgba($brand-primary, .5);
+    }
+  }
+}

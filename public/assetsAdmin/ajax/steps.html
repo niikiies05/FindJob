@@ -1,0 +1,28 @@
+<h5>Steps</h5>
+<p class="text-muted font-size-sm">
+  Simple Steps UI for wizard or progress status.
+</p>
+<nav class="steps">
+  <a href="javascript:void(0)" data-step="1" class="done">Personal</a>
+  <a href="javascript:void(0)" data-step="2" class="done">Shipping</a>
+  <a href="javascript:void(0)" data-step="3" class="current">Payment</a>
+  <a href="javascript:void(0)" data-step="4">Review</a>
+</nav>
+<hr>
+<nav class="steps">
+  <a href="javascript:void(0)" data-step="1" class="done">Processing</a>
+  <a href="javascript:void(0)" data-step="2" class="current">Sending</a>
+  <a href="javascript:void(0)" data-step="3">Delivered</a>
+  <a href="javascript:void(0)" data-step="4">Finished</a>
+</nav>
+
+<script>
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(null, script).then(() => {
+
+    // your script here
+
+  }).then(() => App.stopLoading())
+</script>

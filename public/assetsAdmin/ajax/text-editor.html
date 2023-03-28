@@ -1,0 +1,43 @@
+<h5>Summernote</h5>
+<p class="text-muted font-size-sm">
+  Super simple WYSIWYG Editor.<br>
+</p>
+<div id="summernote-editor"><p>Hello World!</p>
+<p>Some initial <b>bold</b> text</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed expedita deserunt perferendis eaque quia blanditiis porro quas ipsum officiis earum? Dignissimos, delectus. Voluptas impedit obcaecati quidem, tempore beatae totam sint provident quis molestiae odio voluptatum animi laboriosam, eveniet debitis reiciendis? Similique, porro itaque! Quis quisquam earum vitae ratione. Repellendus saepe maxime quisquam nostrum! Maxime tempore illum accusamus fugiat placeat ratione velit voluptate deserunt nobis repellendus vitae laboriosam molestias commodi molestiae consequuntur sint iste, eaque qui aut incidunt, provident laudantium, et amet? Reiciendis, culpa. Consectetur accusantium id explicabo? Illum corporis iusto, ipsa optio est provident, dolor rerum animi et necessitatibus labore?</p>
+</div>
+
+<hr class="my-5">
+
+<h5>Air-Mode</h5>
+<p class="text-muted font-size-sm">
+  Air-mode give an interface without the Toolbar. To reveal popover Toolbar, select a text where you want to modify. Simply turn on <code>airMode</code> and just focus on text.
+</p>
+<hr>
+<div id="summernote-editor-air">
+  <p>This is an Air-mode editable area.</p>
+  <ul>
+    <li>Select a text to reveal the toolbar.</li>
+    <li>Edit rich document on-the-fly, so elastic!</li>
+  </ul>
+  <p>End of air-mode area</p>
+</div>
+
+<script>
+  var plugins = [
+    '../../plugins/summernote/summernote-bs4.css',
+    '../../plugins/summernote/summernote-bs4.min.js',
+  ]
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(plugins, script).then(() => {
+
+    $('#summernote-editor').summernote()
+
+    $('#summernote-editor-air').summernote({
+      airMode: true
+    })
+
+  }).then(() => App.stopLoading())
+</script>

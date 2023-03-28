@@ -1,0 +1,443 @@
+<div class="row">
+  <div class="col">
+
+    <section id="section1">
+      <h5>Basic usage</h5>
+      <p class="text-muted font-size-sm">
+        Bootstrap-select was designed to be a replacement for the standard <code>&lt;select&gt;</code> box that is displayed by the browser. By default it supports all options and operations that are available in a standard select box, but with added flexibility.
+      </p>
+      <div class="row">
+        <div class="col-sm-6 mb-1">
+          <select class="form-control bs-select">
+            <option value="1">Firefox</option>
+            <option value="2">Chrome</option>
+            <option value="4">Safari</option>
+            <option value="5">Opera</option>
+            <option value="6">Edge</option>
+          </select>
+        </div>
+        <div class="col-sm-6 mb-1">
+          <select class="form-control bs-select" disabled>
+            <option value="1">Disabled</option>
+            <option value="2">Firefox</option>
+            <option value="3">Chrome</option>
+            <option value="4">Opera</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section2">
+      <h5>With placeholder</h5>
+      <p class="text-muted font-size-sm">
+        Using the <code>title</code> attribute will set the default placeholder text when nothing is selected.
+      </p>
+      <div class="row">
+        <div class="col-sm-6">
+          <select class="form-control bs-select" title="Choose browser">
+            <option value="1">Firefox</option>
+            <option value="2">Chrome</option>
+            <option value="4">Safari</option>
+            <option value="5">Opera</option>
+            <option value="6">Edge</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section3">
+      <h5>With optgroups</h5>
+      <p class="text-muted font-size-sm">
+        Bootstrap-select support group related options with <code>&lt;optgroup&gt;</code> tags
+      </p>
+      <div class="row">
+        <div class="col-sm-6">
+          <select class="form-control bs-select">
+            <optgroup label="Swedish Cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section4">
+      <h5>Divider</h5>
+      <p class="text-muted font-size-sm">
+        Add <code>data-divider="true"</code> to an option to turn it into a divider.
+      </p>
+      <div class="row">
+        <div class="col-sm-6">
+          <select class="form-control bs-select">
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JS</option>
+            <option data-divider="true">divider</option>
+            <option value="6">PHP</option>
+            <option value="4">MySQL</option>
+            <option value="7">Apache</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section5">
+      <h5>Subtext</h5>
+      <p class="text-muted font-size-sm">
+        Add subtext to an option or optgroup with the <code>data-subtext</code> attribute
+      </p>
+      <div class="row">
+        <div class="col-sm-6">
+          <select class="form-control bs-select">
+            <option value="1" data-subtext="Project Manager">Daria D.</option>
+            <option value="2" data-subtext="Sales Manager">Nastya Z.</option>
+            <option value="3" data-subtext="Copywriter">Sviatoslav A.</option>
+            <option value="4" data-subtext="UI/UX Designer">Anton S.</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section6">
+      <h5>Multiple select boxes</h5>
+      <p class="text-muted font-size-sm">
+        Bootstrap-select also supports multi-value select boxes. The select below is declared with the <code>multiple</code> attribute.
+      </p>
+      <div class="row">
+        <div class="col-sm-6">
+          <select class="form-control bs-select" multiple title="Choose browsers">
+            <option value="1" selected>Firefox</option>
+            <option value="2" selected>Chrome</option>
+            <option value="4" selected>Safari</option>
+            <option value="5">Opera</option>
+            <option value="6">Edge</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section7">
+      <h5>Select / deselect all options</h5>
+      <p class="text-muted font-size-sm">
+        Adds two buttons to the top of the menu - <strong>Select All</strong> &amp; <strong>Deselect All</strong> with <code>data-actions-box="true"</code>.
+      </p>
+      <div class="row">
+        <div class="col-sm-6">
+          <select class="form-control bs-select" title="Choose supported browsers" multiple data-actions-box="true">
+            <option value="1" selected>Firefox</option>
+            <option value="2" selected>Chrome</option>
+            <option value="4" selected>Safari</option>
+            <option value="5">Opera</option>
+            <option value="6">Edge</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section8">
+      <h5>Limit selection</h5>
+      <p class="text-muted font-size-sm">
+        Limit the number of options that can be selected via the <code>data-max-options</code> attribute. It also works for option groups.
+      </p>
+      <div class="row">
+        <div class="col-sm-6 mb-1">
+          <select class="form-control bs-select" title="Choose supported browsers" multiple data-max-options="2">
+            <option value="1">Firefox</option>
+            <option value="2">Chrome</option>
+            <option value="4">Safari</option>
+            <option value="5">Opera</option>
+            <option value="6">Edge</option>
+          </select>
+        </div>
+        <div class="col-sm-6 mb-1">
+          <select class="form-control bs-select" multiple>
+            <optgroup label="Condiments" data-max-options="2">
+              <option>Mustard</option>
+              <option>Ketchup</option>
+              <option>Relish</option>
+            </optgroup>
+            <optgroup label="Breads" data-max-options="2">
+              <option>Plain</option>
+              <option>Steamed</option>
+              <option>Toasted</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section9">
+      <h5>Selected text</h5>
+      <p class="text-muted font-size-sm">
+        Set the <code>title</code> attribute on individual options to display alternative text when the option is selected.
+      </p>
+      <div class="row">
+        <div class="col-sm-6">
+          <select class="form-control bs-select">
+            <option title="Combo 1">Hot Dog, Fries and a Soda</option>
+            <option title="Combo 2">Burger, Shake and a Smile</option>
+            <option title="Combo 3">Sugar, Spice and all things nice</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section10">
+      <h5>Live search</h5>
+      <p class="text-muted font-size-sm">
+        You can add a search input by passing <code>data-live-search="true"</code> attribute.
+      </p>
+      <div class="row">
+        <div class="col-sm-6">
+          <select class="form-control bs-select" title="Choose browser" data-live-search="true">
+            <option value="1">Firefox</option>
+            <option value="2">Chrome</option>
+            <option value="4">Safari</option>
+            <option value="5">Opera</option>
+            <option value="6">Edge</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section11">
+      <h5>Creatable</h5>
+      <p class="text-muted font-size-sm">
+        If no results matched you can press Enter to add your input.<br>
+        Can also be used as input tags for Multiple select boxes.
+      </p>
+      <div class="row">
+        <div class="col-sm-6 mb-1">
+          <select class="form-control bs-select-creatable" title="Find Microsoft's browser">
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Safari">Safari</option>
+            <option value="Opera">Opera</option>
+          </select>
+        </div>
+        <div class="col-sm-6 mb-1">
+          <select class="form-control bs-select-creatable" multiple title="Tags">
+            <option value="Amsterdam">Amsterdam</option>
+            <option value="Washington">Washington</option>
+            <option value="Sydney">Sydney</option>
+            <option value="Beijing">Beijing</option>
+            <option value="Cairo">Cairo</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section12">
+      <h5>Custom content</h5>
+      <p class="text-muted font-size-sm">
+        Insert custom HTML into the option with the <code>data-content</code> attribute.
+      </p>
+      <div class="row">
+        <div class="col-sm-6">
+          <select class="form-control bs-select">
+            <option data-content="<div class='d-flex align-items-center'><img src='../../dist/img/user1.svg' class='rounded-circle mr-2' width='30'> Socrates Itumay</div>">Socrates Itumay</option>
+            <option data-content="<div class='d-flex align-items-center'><img src='../../dist/img/user2.svg' class='rounded-circle mr-2' width='30'> Reynante Labares</div>">Reynante Labares</option>
+            <option data-content="<div class='d-flex align-items-center'><img src='../../dist/img/user3.svg' class='rounded-circle mr-2' width='30'> Marianne Audrey</div>">Marianne Audrey</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section13">
+      <h5>Sizing</h5>
+      <p class="text-muted font-size-sm">
+        Set size with <code>style</code> options.
+      </p>
+      <div class="row">
+        <div class="col-sm-6 mb-1">
+          <select class="form-control bs-select-sm">
+            <option value="1">Firefox</option>
+            <option value="2">Chrome</option>
+            <option value="4">Safari</option>
+            <option value="5">Opera</option>
+            <option value="6">Edge</option>
+          </select>
+        </div>
+        <div class="col-sm-6 mb-1">
+          <select class="form-control bs-select-sm" disabled>
+            <option value="1">Disabled</option>
+            <option value="2">Firefox</option>
+            <option value="3">Chrome</option>
+            <option value="4">Opera</option>
+          </select>
+        </div>
+        <div class="col-sm-6 mb-1">
+          <select class="form-control bs-select-lg">
+            <option value="1">Firefox</option>
+            <option value="2">Chrome</option>
+            <option value="4">Safari</option>
+            <option value="5">Opera</option>
+            <option value="6">Edge</option>
+          </select>
+        </div>
+        <div class="col-sm-6 mb-1">
+          <select class="form-control bs-select-lg" disabled>
+            <option value="1">Disabled</option>
+            <option value="2">Firefox</option>
+            <option value="3">Chrome</option>
+            <option value="4">Opera</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section14">
+      <h5>Clearable</h5>
+      <p class="text-muted font-size-sm">
+        Add a clear button ("x" icon) to appear on the select box when a value is selected. Clicking the clear button will clear the selected value, effectively resetting the select box back to its placeholder value.
+      </p>
+      <div class="row">
+        <div class="col-sm-6 mb-1">
+          <select class="form-control bs-select" title="Choose browser">
+            <option value="1">Firefox</option>
+            <option value="2">Chrome</option>
+            <option value="4">Safari</option>
+            <option value="5">Opera</option>
+            <option value="6">Edge</option>
+          </select>
+          <span class="bs-select-clear"></span>
+        </div>
+        <div class="col-sm-6 mb-1">
+          <select class="form-control bs-select" title="Choose browser">
+            <option value="1">Firefox</option>
+            <option value="2" selected>Chrome</option>
+            <option value="4">Safari</option>
+            <option value="5">Opera</option>
+            <option value="6">Edge</option>
+          </select>
+          <span class="bs-select-clear"></span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+  </div>
+
+  <div class="col-3 d-none d-xl-block">
+    <div class="nav-section">
+      <label class="text-muted">On This Page</label>
+      <nav id="navSection" class="nav flex-column">
+        <a href="#section1" class="nav-link nav-link-sm">Basic usage</a>
+        <a href="#section2" class="nav-link nav-link-sm">With placeholder</a>
+        <a href="#section3" class="nav-link nav-link-sm">With optgroups</a>
+        <a href="#section4" class="nav-link nav-link-sm">Divider</a>
+        <a href="#section5" class="nav-link nav-link-sm">Subtext</a>
+        <a href="#section6" class="nav-link nav-link-sm">Multiple select boxes</a>
+        <a href="#section7" class="nav-link nav-link-sm">Select / deselect all options</a>
+        <a href="#section8" class="nav-link nav-link-sm">Limit selection</a>
+        <a href="#section9" class="nav-link nav-link-sm">Selected text</a>
+        <a href="#section10" class="nav-link nav-link-sm">Live search</a>
+        <a href="#section11" class="nav-link nav-link-sm">Creatable</a>
+        <a href="#section12" class="nav-link nav-link-sm">Custom content</a>
+        <a href="#section13" class="nav-link nav-link-sm">Sizing</a>
+        <a href="#section14" class="nav-link nav-link-sm">Clearable</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script>
+  var plugins = [
+    '../../plugins/bootstrap-select/bootstrap-select.min.css',
+    '../../plugins/bootstrap-select/bootstrap-select.min.js',
+  ]
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(plugins, script).then(() => {
+
+    $('.bs-select').selectpicker({ style: 'btn' })
+    $('.bs-select-sm').selectpicker({ style: 'btn btn-sm' })
+    $('.bs-select-lg').selectpicker({ style: 'btn btn-lg' })
+    $('.bootstrap-select').on('show.bs.select', function () {
+      this.querySelector('.dropdown-toggle').classList.add('focus')
+    }).on('hide.bs.select', function () {
+      this.querySelector('.dropdown-toggle').classList.remove('focus')
+    })
+    $('.bs-select-creatable').selectpicker({
+      style: 'btn',
+      liveSearch: true,
+      noneResultsText: 'Press Enter to add: <b>{0}</b>'
+    })
+    $('.bs-select-creatable .bs-searchbox .form-control').on('keyup', function (e) {
+      const bs = this.closest('.bootstrap-select')
+      if (bs.querySelector('.no-results')) {
+        if (e.keyCode === 13) {
+          let el = bs.querySelector('select')
+          el.insertAdjacentHTML('afterbegin', `<option value="${$(this).val()}">${$(this).val()}</option>`)
+          let newVal = $(el).val()
+          Array.isArray(newVal) ? newVal.push(this.value) : newVal = this.value
+          $(el).val(newVal)
+          $(el).selectpicker('toggle')
+          $(el).selectpicker('refresh')
+          bs.querySelector('.dropdown-toggle').focus()
+          this.value = ''
+        }
+      }
+    })
+
+    // Clearable
+    function toggleClear(select, el) {
+      el.style.display = select.value == '' ? 'none' : 'inline'
+      if (select.value == '') {
+        select.parentNode.querySelector('.filter-option').classList.remove('mr-4')
+      } else {
+        select.parentNode.querySelector('.filter-option').classList.add('mr-4')
+      }
+    }
+    for (const el of document.querySelectorAll('select.bs-select, select.bs-select-sm, select.bs-select-lg')) {
+      const clearEl = el.parentNode.nextElementSibling
+      if (clearEl && clearEl.classList.contains('bs-select-clear')) {
+        toggleClear(el, clearEl)
+        el.addEventListener('change', function () {
+          toggleClear(this, clearEl)
+        })
+      }
+    }
+    for (const el of document.querySelectorAll('.bs-select-clear')) {
+      el.addEventListener('click', function () {
+        const select = this.previousElementSibling.querySelector('select')
+        $(select).selectpicker('val', '')
+        select.dispatchEvent(new Event('change'))
+      })
+    }
+
+  }).then(() => App.stopLoading())
+</script>

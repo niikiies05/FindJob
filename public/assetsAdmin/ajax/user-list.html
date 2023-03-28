@@ -1,0 +1,189 @@
+<div class="d-flex">
+  <div class="list-with-gap">
+    <button class="btn btn-primary has-icon" type="button" data-toggle="modal" data-target="#addUser"><i class="material-icons mr-2">add_circle_outline</i>Add new user</button>
+    <button class="btn btn-light btn-sm d-none d-sm-block">Import user</button>
+    <button class="btn btn-light btn-sm d-none d-sm-block">Export user (Excel)</button>
+  </div>
+  <button class="btn btn-primary ml-auto align-self-end has-icon" type="button" onclick="document.querySelector('#filter').toggleAttribute('hidden')">
+    <i class="material-icons mr-2">filter_list</i>Filter
+  </button>
+</div>
+<div class="card card-style-1 mt-3">
+  <div class="table-responsive">
+    <table class="table table-nostretch table-align-middle mb-0">
+      <thead>
+        <tr class="column-filter" id="filter" hidden>
+          <th></th>
+          <th><input type="text" class="form-control" placeholder="Search User Fullname"></th>
+          <th><input type="text" class="form-control" placeholder="Search Mobile"></th>
+          <th><input type="text" class="form-control" placeholder="Search Email"></th>
+          <th>
+            <select class="custom-select">
+              <option value="">All</option>
+              <option value="active">Active</option>
+              <option value="inactive">Inactive</option>
+            </select>
+          </th>
+          <th><button class="btn btn-outline-primary btn-block has-icon"><i class="material-icons">search</i></button></th>
+        </tr>
+        <tr>
+          <th scope="col" class="text-center">Avatar</th>
+          <th scope="col"><a href="javascript:void(0)" class="sorting asc">User Fullname</a></th>
+          <th scope="col"><a href="javascript:void(0)" class="sorting">Mobile</a></th>
+          <th scope="col"><a href="javascript:void(0)" class="sorting">Email</a></th>
+          <th scope="col" class="text-center"><a href="javascript:void(0)" class="sorting">Status</a></th>
+          <th scope="col" class="text-center"><a href="javascript:void(0)" class="sorting">Action</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="text-center"><img src="../../dist/img/user1.svg" alt="user" class="rounded-circle" width="40"></td>
+          <td>Dennis Castro</td>
+          <td>(887) 547-5112</td>
+          <td>ewusa@cuzuc.pe</td>
+          <td class="text-center h5"><span class="badge badge-pill badge-success">Active</span></td>
+          <td class="text-center">
+            <div class="btn-group btn-group-sm" role="group">
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-info" title="Detail"><i class="material-icons">visibility</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-success" title="Edit"><i class="material-icons">edit</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-danger" title="Delete"><i class="material-icons">delete_outline</i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-center"><img src="../../dist/img/user2.svg" alt="user" class="rounded-circle" width="40"></td>
+          <td>Derrick Reyes</td>
+          <td>(849) 999-3741</td>
+          <td>wedaom@hef.cz</td>
+          <td class="text-center h5"><span class="badge badge-pill badge-success">Active</span></td>
+          <td class="text-center">
+            <div class="btn-group btn-group-sm" role="group">
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-info" title="Detail"><i class="material-icons">visibility</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-success" title="Edit"><i class="material-icons">edit</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-danger" title="Delete"><i class="material-icons">delete_outline</i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-center"><img src="../../dist/img/user3.svg" alt="user" class="rounded-circle" width="40"></td>
+          <td>Jeffrey Henderson</td>
+          <td>(358) 919-1298</td>
+          <td>tevamvud@vigzos.mh</td>
+          <td class="text-center h5"><span class="badge badge-pill badge-success">Active</span></td>
+          <td class="text-center">
+            <div class="btn-group btn-group-sm" role="group">
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-info" title="Detail"><i class="material-icons">visibility</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-success" title="Edit"><i class="material-icons">edit</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-danger" title="Delete"><i class="material-icons">delete_outline</i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-center"><img src="../../dist/img/user4.svg" alt="user" class="rounded-circle" width="40"></td>
+          <td>Hallie Williamson</td>
+          <td>(710) 490-1360</td>
+          <td>owo@wijrij.gh</td>
+          <td class="text-center h5"><span class="badge badge-pill badge-danger">Inactive</span></td>
+          <td class="text-center">
+            <div class="btn-group btn-group-sm" role="group">
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-info" title="Detail"><i class="material-icons">visibility</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-success" title="Edit"><i class="material-icons">edit</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-danger" title="Delete"><i class="material-icons">delete_outline</i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-center"><img src="../../dist/img/user5.svg" alt="user" class="rounded-circle" width="40"></td>
+          <td>Jackson Swanson</td>
+          <td>(582) 575-8628</td>
+          <td>noltun@zectikde.gf</td>
+          <td class="text-center h5"><span class="badge badge-pill badge-success">Active</span></td>
+          <td class="text-center">
+            <div class="btn-group btn-group-sm" role="group">
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-info" title="Detail"><i class="material-icons">visibility</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-success" title="Edit"><i class="material-icons">edit</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-danger" title="Delete"><i class="material-icons">delete_outline</i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-center"><img src="../../dist/img/user1.svg" alt="user" class="rounded-circle" width="40"></td>
+          <td>Alexander Burton</td>
+          <td>(465) 534-7053</td>
+          <td>nunetaf@lu.ws</td>
+          <td class="text-center h5"><span class="badge badge-pill badge-success">Active</span></td>
+          <td class="text-center">
+            <div class="btn-group btn-group-sm" role="group">
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-info" title="Detail"><i class="material-icons">visibility</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-success" title="Edit"><i class="material-icons">edit</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-danger" title="Delete"><i class="material-icons">delete_outline</i></a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="text-center"><img src="../../dist/img/user2.svg" alt="user" class="rounded-circle" width="40"></td>
+          <td>Wayne Washington</td>
+          <td>(747) 286-6514</td>
+          <td>fowdo@ej.lu</td>
+          <td class="text-center h5"><span class="badge badge-pill badge-success">Active</span></td>
+          <td class="text-center">
+            <div class="btn-group btn-group-sm" role="group">
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-info" title="Detail"><i class="material-icons">visibility</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-success" title="Edit"><i class="material-icons">edit</i></a>
+              <a href="javascript:void(0)" class="btn btn-link btn-icon bigger-130 text-danger" title="Delete"><i class="material-icons">delete_outline</i></a>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Add user Modal -->
+<div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="addUserLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form>
+        <div class="modal-header d-flex align-items-center bg-dark text-white">
+          <h6 class="modal-title mb-0" id="addUserLabel">Add new user</h6>
+          <button class="btn btn-icon btn-sm btn-text-light rounded-circle" type="button" data-dismiss="modal">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="userName">Fullname</label>
+            <input type="text" class="form-control" id="userName" placeholder="Enter fullname">
+          </div>
+          <div class="form-group">
+            <label for="userMobile">Mobile</label>
+            <input type="tel" class="form-control" id="userMobile" placeholder="Enter mobile phone number">
+          </div>
+          <div class="form-group">
+            <label for="useremail">Email</label>
+            <input type="email" class="form-control" id="useremail" placeholder="Enter email">
+          </div>
+          <div class="custom-file w-75">
+            <input type="file" class="custom-file-input" id="customFile" multiple>
+            <label class="custom-file-label" for="customFile">Avatar</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-faded-light" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(null, script).then(() => {
+
+    // your script here
+
+  }).then(() => App.stopLoading())
+</script>

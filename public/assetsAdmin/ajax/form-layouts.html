@@ -1,0 +1,266 @@
+<div class="row">
+  <div class="col">
+
+    <section id="section1">
+      <h5>Form Group</h5>
+      <p class="text-muted font-size-sm">
+        A form with a label on top of each form control.
+      </p>
+      <div class="card card-style-1">
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="emailTop">Email address</label>
+              <span class="input-icon">
+                <i class="material-icons">mail_outline</i>
+                <input type="email" class="form-control" id="emailTop" aria-describedby="emailHelp" placeholder="Enter email">
+              </span>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="passwordTop">Password</label>
+              <span class="input-icon">
+                <i class="material-icons">lock_open</i>
+                <input type="password" class="form-control" id="passwordTop" placeholder="Enter password">
+              </span>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="agreeCheck">
+                <label class="custom-control-label" for="agreeCheck">I agree with </label>
+                <a href="javascript:void(0)"><u>terms and conditions</u></a>
+              </div>
+            </div>
+            <button class="btn btn-secondary" type="reset">Reset</button>
+            <button class="btn btn-primary" type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section2">
+      <h5>Fieldset</h5>
+      <p class="text-muted font-size-sm">
+        Group related elements in a form with a legend.
+      </p>
+      <div class="card card-style-1">
+        <div class="card-body">
+          <form>
+            <fieldset class="form-fieldset">
+              <legend>Personal Information</legend>
+              <div class="form-group">
+                <label for="fieldsetExampleInput">Firstname</label>
+                <input type="text" class="form-control" id="fieldsetExampleInput" placeholder="Enter your firstname">
+              </div>
+              <div class="form-group">
+                <label for="fieldsetExampleInput2">Lastname</label>
+                <input type="text" class="form-control" id="fieldsetExampleInput2" placeholder="Enter your lastname">
+              </div>
+              <div class="form-group">
+                <div class="custom-control custom-radio">
+                  <input type="radio" name="gender" class="custom-control-input" id="gender1">
+                  <label class="custom-control-label" for="gender1">Male</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" name="gender" class="custom-control-input" id="gender2">
+                  <label class="custom-control-label" for="gender2">Female</label>
+                </div>
+              </div>
+              <button class="btn btn-secondary" type="reset">Reset</button>
+              <button class="btn btn-primary" type="submit">Save</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section3">
+      <h5>Form Grid</h5>
+      <p class="text-muted font-size-sm">
+        More complex forms can be built using our grid classes. Use these for form layouts that require multiple columns, varied widths, and additional alignment options.
+      </p>
+      <div class="card card-style-1">
+        <div class="card-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="emailGrid">Email</label>
+                <input type="email" class="form-control" id="emailGrid" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="passwordGrid">Password</label>
+                <input type="password" class="form-control" id="passwordGrid" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="addressGrid">Address</label>
+              <input type="text" class="form-control" id="addressGrid" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="Address2Grid">Address 2</label>
+              <input type="text" class="form-control" id="Address2Grid" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-5">
+                <label for="cityGrid">City</label>
+                <input type="text" class="form-control" id="cityGrid">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="stateGrid">State</label>
+                <select id="stateGrid" class="form-control custom-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="zipGrid">Zip</label>
+                <input type="text" class="form-control" id="zipGrid">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="agreeSwitch">
+                <label class="custom-control-label" for="agreeSwitch">I agree with </label>
+                <a href="javascript:void(0)"><u>terms and conditions</u></a>
+              </div>
+            </div>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+            <button type="submit" class="btn btn-primary">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section4">
+      <h5>Horizontal Form</h5>
+      <p class="text-muted font-size-sm">
+        Create horizontal forms with the grid by adding the <code>.row</code> class to form groups and using the <code>.col</code> classes to specify the width of your labels and controls.
+      </p>
+      <div class="card card-style-1">
+        <div class="card-body">
+          <form>
+            <div class="form-group row no-gutters">
+              <label for="firstNameLeft" class="col-3 col-sm-2 col-form-label">First Name</label>
+              <div class="col">
+                <input type="text" class="form-control" id="firstNameLeft" placeholder="Enter firstname">
+              </div>
+            </div>
+            <div class="form-group row no-gutters">
+              <label for="lastNameLeft" class="col-3 col-sm-2 col-form-label">Last Name</label>
+              <div class="col">
+                <input type="text" class="form-control" id="lastNameLeft" placeholder="Enter lastname">
+              </div>
+            </div>
+            <div class="form-group row no-gutters">
+              <label for="emailLeft" class="col-3 col-sm-2 col-form-label">Email</label>
+              <div class="col">
+                <input type="email" class="form-control" id="emailLeft" placeholder="Enter email">
+              </div>
+            </div>
+            <div class="form-group row no-gutters">
+              <label for="addressLeft" class="col-3 col-sm-2 col-form-label">Address</label>
+              <div class="col">
+                <textarea class="form-control" id="addressLeft" placeholder="Enter your address" rows="2"></textarea>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col offset-3 offset-sm-2">
+                <button class="btn btn-secondary" type="reset">Reset</button>
+                <button class="btn btn-primary" type="submit">Save</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section5">
+      <h5>Inline forms</h5>
+      <p class="text-muted font-size-sm">
+        Use the <code>.form-inline</code> class to display a series of labels, form controls, and buttons on a single horizontal row. Form controls within inline forms vary slightly from their default states.
+      </p>
+      <div class="card card-style-1">
+        <div class="card-body">
+          <form class="form-inline">
+            <input type="text" class="form-control w-50 mr-1" placeholder="State">
+            <input type="text" class="form-control w-25 mr-1" placeholder="Zip">
+            <button type="button" class="btn btn-primary">Save</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section6">
+      <h5>Table Form</h5>
+      <p class="text-muted font-size-sm">
+        Create horizontal forms with table layout.
+      </p>
+      <div class="card card-style-1">
+        <div class="card-body">
+          <form>
+            <table class="table table-bordered table-form">
+              <tbody>
+                <tr>
+                  <td><label for="firstNameTableForm">First Name</label></td>
+                  <td><input type="text" class="form-control" id="firstNameTableForm" placeholder="Enter firstname"></td>
+                </tr>
+                <tr>
+                  <td><label for="lastNameTableForm">Last Name</label></td>
+                  <td><input type="text" class="form-control" id="lastNameTableForm" placeholder="Enter lastname"></td>
+                </tr>
+                <tr>
+                  <td><label for="emailTableForm">Email</label></td>
+                  <td><input type="email" class="form-control" id="emailTableForm" placeholder="Enter email"></td>
+                </tr>
+                <tr>
+                  <td><label for="addressTableForm">Address</label></td>
+                  <td><textarea class="form-control" id="addressTableForm" placeholder="Enter your address" rows="2"></textarea></td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn btn-secondary" type="reset">Reset</button>
+            <button class="btn btn-primary" type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+  </div>
+
+  <div class="col-3 d-none d-xl-block">
+    <div class="nav-section">
+      <label class="text-muted">On This Page</label>
+      <nav id="navSection" class="nav flex-column">
+        <a href="#section1" class="nav-link nav-link-sm">Form Group</a>
+        <a href="#section2" class="nav-link nav-link-sm">Fieldset</a>
+        <a href="#section3" class="nav-link nav-link-sm">Form Grid</a>
+        <a href="#section4" class="nav-link nav-link-sm">Horizontal Form</a>
+        <a href="#section5" class="nav-link nav-link-sm">Inline forms</a>
+        <a href="#section6" class="nav-link nav-link-sm">Table Form</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script>
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(null, script).then(() => {
+
+    // your script here
+
+  }).then(() => App.stopLoading())
+</script>

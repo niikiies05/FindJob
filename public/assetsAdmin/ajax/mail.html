@@ -1,0 +1,452 @@
+<div class="card card-style-1">
+  <div class="card-body">
+    <div class="d-flex">
+      <button class="btn btn-primary has-icon px-50 mb-3" type="button" data-toggle="modal" data-target="#composeModal">
+        <i class="material-icons mr-2">add</i>Compose
+      </button>
+      <span class="input-icon ml-3">
+        <i class="material-icons">search</i>
+        <input type="text" class="form-control bg-light border-0 shadow-none" placeholder="Search mail">
+      </span>
+    </div>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a href="#inbox" class="nav-link has-icon active" data-toggle="tab">
+          <i class="material-icons mr-1">inbox</i><span class="d-none d-sm-inline-block">Inbox</span><span class="badge badge-primary ml-1">2</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#sent" class="nav-link has-icon" data-toggle="tab">
+          <i class="material-icons mr-1">send</i><span class="d-none d-sm-inline-block">Sent</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#trash" class="nav-link has-icon" data-toggle="tab">
+          <i class="material-icons mr-1">delete</i><span class="d-none d-sm-inline-block">Trash</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle has-icon" data-toggle="dropdown" title="Labels" data-display="static"><i class="material-icons mr-1">local_offer</i></a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-menu-sm-left font-size-sm">
+          <a class="dropdown-item d-flex justify-content-between" data-toggle="tab" href="#social">Social<span class="text-muted pl-3">8</span></a>
+          <a class="dropdown-item d-flex justify-content-between" data-toggle="tab" href="#promotions">Promotions<span class="text-muted pl-3">3</span></a>
+          <a class="dropdown-item d-flex justify-content-between" data-toggle="tab" href="#updates">Updates<span class="text-muted pl-3">20</span></a>
+          <a class="dropdown-item d-flex justify-content-between" data-toggle="tab" href="#jobstreet">Jobstreet<span class="text-muted pl-3">5</span></a>
+        </div>
+      </li>
+    </ul>
+
+    <div class="tab-content p-0" id="tab-content-mail">
+      <div class="tab-pane show active" id="inbox">
+        <table class="table table-sm table-mail has-checkAll mb-0" data-checked-class="table-primary" data-bulk-target="#bulk-action">
+          <caption>1-10 of 347</caption>
+          <thead>
+            <tr>
+              <th scope="col">
+                <div class="btn-group btn-group-sm">
+                  <!-- Select all -->
+                  <label class="btn btn-light flex-center py-0 mb-0" data-toggle="tooltip" data-trigger="hover" title="Select all">
+                    <span class="custom-control custom-control-nolabel custom-checkbox primary">
+                      <input type="checkbox" class="custom-control-input" id="checkAll">
+                      <span class="custom-control-label"></span>
+                    </span>
+                  </label>
+                  <!-- Select options -->
+                  <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                  <div class="dropdown-menu font-size-sm">
+                    <button class="dropdown-item" data-toggle="mail-checkbox" data-check="all" type="button">All</button>
+                    <button class="dropdown-item" data-toggle="mail-checkbox" data-check="none" type="button">None</button>
+                    <button class="dropdown-item" data-toggle="mail-checkbox" data-check="read" type="button">Read</button>
+                    <button class="dropdown-item" data-toggle="mail-checkbox" data-check="unread" type="button">Unread</button>
+                    <button class="dropdown-item" data-toggle="mail-checkbox" data-check="starred" type="button">Starred</button>
+                    <button class="dropdown-item" data-toggle="mail-checkbox" data-check="unstarred" type="button">Unstarred</button>
+                  </div>
+                </div>
+              </th>
+              <th scope="col">
+                <button class="btn btn-light btn-sm btn-icon" data-toggle="tooltip" data-trigger="hover" title="Refresh">
+                  <i class="material-icons">refresh</i>
+                </button>
+                <!-- Bulk action -->
+                <div class="btn-group btn-group-sm ml-1" role="group" id="bulk-action" hidden>
+                  <button type="button" class="btn btn-light btn-icon" data-toggle="tooltip" data-trigger="hover" title="Archive"><i class="material-icons">archive</i></button>
+                  <button type="button" class="btn btn-light btn-icon" data-toggle="tooltip" data-trigger="hover" title="Report spam"><i class="material-icons">report</i></button>
+                  <button type="button" class="btn btn-light btn-icon" data-toggle="tooltip" data-trigger="hover" title="Delete"><i class="material-icons">delete</i></button>
+                  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" data-display="static"></button>
+                  <div class="dropdown-menu dropdown-menu-right dropdown-menu-sm-left font-size-sm">
+                    <button class="dropdown-item" type="button">Mark as read</button>
+                    <button class="dropdown-item" type="button">Mark as unread</button>
+                    <button class="dropdown-item" type="button">Add star</button>
+                    <div class="dropdown-submenu">
+                      <button class="dropdown-item" type="button">Label as</button>
+                      <div class="dropdown-menu font-size-sm">
+                        <button class="dropdown-item" type="button">Social</button>
+                        <button class="dropdown-item" type="button">Promotions</button>
+                        <button class="dropdown-item" type="button">Updates</button>
+                        <button class="dropdown-item" type="button">Jobstreet</button>
+                      </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <button class="dropdown-item" type="button">Mute</button>
+                  </div>
+                </div>
+                <!-- /Bulk action -->
+                <div class="float-right flex-center">
+                  <span class="font-weight-normal mr-2 d-none d-sm-block">1-10 of 347</span>
+                  <button class="btn btn-sm btn-faded-light btn-icon rounded-circle shadow-none"><i class="material-icons">chevron_left</i></button>
+                  <button class="btn btn-sm btn-faded-light btn-icon rounded-circle shadow-none"><i class="material-icons">chevron_right</i></button>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="unread">
+              <td>
+                <div class="custom-control custom-control-nolabel custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox1">
+                  <label for="checkbox1" class="custom-control-label"></label>
+                </div>
+                <button class="btn btn-xs btn-icon btn-starred" data-toggle="buttons"><i class="material-icons">star</i></button>
+              </td>
+              <td>
+                <div class="list-mail-item">
+                  <a class="list-mail-item-subject text-dark stretched-link" href="#">support@wrapbootstrap.com</a>
+                  <span class="list-mail-item-preview"><span class="badge badge-pill badge-danger">New</span> You sold an item! - Hello omadmin, Congratulations! You sold a Single License for Mimity...</span>
+                  <span class="list-mail-item-time">4:20 AM</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="unread starred">
+              <td>
+                <div class="custom-control custom-control-nolabel custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox2">
+                  <label for="checkbox2" class="custom-control-label"></label>
+                </div>
+                <button class="btn btn-xs btn-icon btn-starred active" data-toggle="buttons"><i class="material-icons">star</i></button>
+              </td>
+              <td>
+                <div class="list-mail-item">
+                  <a class="list-mail-item-subject text-dark stretched-link" href="#">notifications</a>
+                  <span class="list-mail-item-preview">New Comment: Mimity - Online Shop Template - Someone commented on your item, Mimity Online...</span>
+                  <span class="list-mail-item-time">Sep 24</span>
+                </div>
+              </td>
+            </tr>
+            <tr class="starred">
+              <td>
+                <div class="custom-control custom-control-nolabel custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox3">
+                  <label for="checkbox3" class="custom-control-label"></label>
+                </div>
+                <button class="btn btn-xs btn-icon btn-starred active" data-toggle="buttons"><i class="material-icons">star</i></button>
+              </td>
+              <td>
+                <div class="list-mail-item">
+                  <a class="list-mail-item-subject text-dark stretched-link" href="#">service@intl.paypal.</a>
+                  <span class="list-mail-item-preview">We're transfering money to your bank - We're transferring money from PayPal to your bank...</span>
+                  <span class="list-mail-item-time">Sep 16</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-control-nolabel custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox4">
+                  <label for="checkbox4" class="custom-control-label"></label>
+                </div>
+                <button class="btn btn-xs btn-icon btn-starred" data-toggle="buttons"><i class="material-icons">star</i></button>
+              </td>
+              <td>
+                <div class="list-mail-item">
+                  <a class="list-mail-item-subject text-dark stretched-link" href="#">Steam Support</a>
+                  <span class="list-mail-item-preview">Thank you for activating your product on Steam! - Your activation of DiRT Rally was successful...</span>
+                  <span class="list-mail-item-time">Aug 31</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-control-nolabel custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox5">
+                  <label for="checkbox5" class="custom-control-label"></label>
+                </div>
+                <button class="btn btn-xs btn-icon btn-starred" data-toggle="buttons"><i class="material-icons">star</i></button>
+              </td>
+              <td>
+                <div class="list-mail-item">
+                  <a class="list-mail-item-subject text-dark stretched-link" href="#">Facebook</a>
+                  <span class="list-mail-item-preview"><span class="badge badge-info">Social</span> Did you log into Facebook from somewhere new? - It looks like someone tried to log into your account on...</span>
+                  <span class="list-mail-item-time">Aug 13</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-control-nolabel custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox6">
+                  <label for="checkbox6" class="custom-control-label"></label>
+                </div>
+                <button class="btn btn-xs btn-icon btn-starred" data-toggle="buttons"><i class="material-icons">star</i></button>
+              </td>
+              <td>
+                <div class="list-mail-item">
+                  <a class="list-mail-item-subject text-dark stretched-link" href="#">Pinterest</a>
+                  <span class="list-mail-item-preview">Discover new ideas from your Pin twin - You and Wenjia are both interested in dashboard design...</span>
+                  <span class="list-mail-item-time">Aug 11</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-control-nolabel custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox7">
+                  <label for="checkbox7" class="custom-control-label"></label>
+                </div>
+                <button class="btn btn-xs btn-icon btn-starred" data-toggle="buttons"><i class="material-icons">star</i></button>
+              </td>
+              <td>
+                <div class="list-mail-item">
+                  <a class="list-mail-item-subject text-dark stretched-link" href="#">Pixabay</a>
+                  <span class="list-mail-item-preview"><span class="badge badge-success">Promotion</span> Free Add-Ons for Photoshop and MS Office - These plugins let you search and insert Pixabay im...</span>
+                  <span class="list-mail-item-time">Jul 31</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-control-nolabel custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox8">
+                  <label for="checkbox8" class="custom-control-label"></label>
+                </div>
+                <button class="btn btn-xs btn-icon btn-starred" data-toggle="buttons"><i class="material-icons">star</i></button>
+              </td>
+              <td>
+                <div class="list-mail-item">
+                  <a class="list-mail-item-subject text-dark stretched-link" href="#">CodePen</a>
+                  <span class="list-mail-item-preview">The CodePen Spark - Nouns, Verbs, and Adjectives - View this issue on CodePen Nouns, Verbs, an...</span>
+                  <span class="list-mail-item-time">Jul 14</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-control-nolabel custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox9">
+                  <label for="checkbox9" class="custom-control-label"></label>
+                </div>
+                <button class="btn btn-xs btn-icon btn-starred" data-toggle="buttons"><i class="material-icons">star</i></button>
+              </td>
+              <td>
+                <div class="list-mail-item">
+                  <a class="list-mail-item-subject text-dark stretched-link" href="#">Medium Daily Digest</a>
+                  <span class="list-mail-item-preview">I Got Turned down for a Dream Job Because of an Article I Wrote” published in Publishous by Tim Denning...</span>
+                  <span class="list-mail-item-time">Jun 18</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="custom-control custom-control-nolabel custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="checkbox10">
+                  <label for="checkbox10" class="custom-control-label"></label>
+                </div>
+                <button class="btn btn-xs btn-icon btn-starred" data-toggle="buttons"><i class="material-icons">star</i></button>
+              </td>
+              <td>
+                <div class="list-mail-item">
+                  <a class="list-mail-item-subject text-dark stretched-link" href="#">Dribbble</a>
+                  <span class="list-mail-item-preview">Popular last week on Dribbble - Dribbble popular shots from the week of Sep 15th - Sep 22nd...</span>
+                  <span class="list-mail-item-time">May 10</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- <div class="tab-pane" id="sent">sent content here</div>
+      <div class="tab-pane" id="trash">trash content here</div>
+      <div class="tab-pane" id="social">social content here</div>
+      <div class="tab-pane" id="promotions">promotions content here</div>
+      <div class="tab-pane" id="updates">updates content here</div>
+      <div class="tab-pane" id="jobstreet">jobstreet content here</div> -->
+
+      <!-- MAIL CONTENT -->
+      <div id="mail-content" hidden>
+        <div class="media">
+          <img src="../img/user1.svg" alt="user" width="40" class="rounded-circle">
+          <div class="media-body ml-3">
+            <strong>Pinterest</strong> &#x3C;pinbot@explore.pinterest.com&#x3E; <small class="text-muted">5 days ago</small>
+            <h5 class="mb-0">See which 18 ideas are trending on Pinterest</h5>
+          </div>
+        </div>
+        <hr>
+        <a href="#" class="btn btn-sm btn-light btn-icon to-inbox" data-toggle="tooltip" data-trigger="hover" title="Back"><i class="material-icons">chevron_left</i></a>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-light btn-icon" data-toggle="tooltip" data-trigger="hover" title="Archive"><i class="material-icons">archive</i></button>
+          <button type="button" class="btn btn-light btn-icon" data-toggle="tooltip" data-trigger="hover" title="Report spam"><i class="material-icons">report</i></button>
+          <button type="button" class="btn btn-light btn-icon" data-toggle="tooltip" data-trigger="hover" title="Delete"><i class="material-icons">delete</i></button>
+        </div>
+        <div class="btn-group btn-group-sm float-right" role="group" aria-label="Button group with nested dropdown">
+          <button type="button" class="btn btn-light btn-icon" data-toggle="tooltip" data-trigger="hover" title="Reply"><i class="material-icons">reply</i></button>
+          <div class="btn-group btn-group-sm" role="group">
+            <button type="button" class="btn btn-light border dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu dropdown-menu-right font-size-sm">
+              <button class="dropdown-item has-icon" type="button"><i class="material-icons mr-2">forward</i> Forward</button>
+              <button class="dropdown-item has-icon" type="button"><i class="material-icons mr-2">print</i> Print</button>
+              <div class="dropdown-divider"></div>
+              <button class="dropdown-item has-icon text-danger" type="button"><i class="material-icons mr-2">delete</i> Delete</button>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="mail-content">
+          <p>Hello,</p>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.</p>
+          Regards,<br/>
+          Pinterest
+          <hr>
+          <div class="mb-1">Attachments:</div>
+          <ul class="list-unstyled mb-0">
+            <li class="d-flex">
+              <i class="material-icons mr-2">attachment</i>
+              <a href="javascript:void(0)" class="text-body font-weight-bold">update.zip
+                <small class="font-weight-normal text-muted">(5.12 KB)</small>
+              </a>
+            </li>
+            <li class="d-flex">
+              <i class="material-icons mr-2">attachment</i>
+              <a href="javascript:void(0)" class="text-body font-weight-bold">readme.pdf
+                <small class="font-weight-normal text-muted">(11.3 MB)</small>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /MAIL CONTENT -->
+    </div>
+  </div>
+</div>
+
+<!-- Compose Modal -->
+<div class="modal fade" id="composeModal" tabindex="-1" role="dialog" aria-labelledby="composeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <form>
+        <div class="modal-header d-flex align-items-center bg-dark text-white">
+          <h6 class="modal-title mb-0" id="composeModalLabel">New Message</h6>
+          <button class="btn btn-icon btn-sm btn-text-light rounded-circle" type="button" data-dismiss="modal">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="mailTo">To</label>
+            <input type="email" class="form-control" id="mailTo" placeholder="Enter recipient's email address">
+          </div>
+          <div class="form-group">
+            <label for="mailSubject">Subject</label>
+            <input type="text" class="form-control" id="mailSubject" placeholder="Enter subject">
+          </div>
+          <div id="summernote-editor"></div>
+          <div class="custom-file form-control-sm mt-3" style="max-width: 300px">
+            <input type="file" class="custom-file-input" id="customFile" multiple>
+            <label class="custom-file-label" for="customFile">Attachment</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  var plugins = [
+    '../../plugins/summernote/summernote-bs4.css',
+    '../../plugins/summernote/summernote-bs4.min.js',
+  ]
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(plugins, script).then(() => {
+
+    App.checkAll()
+
+    // Focus to 'To input' when modal shown
+    $('#composeModal').on('shown.bs.modal', () => {
+      document.querySelector('#mailTo').focus()
+    })
+
+    // Text editor
+    $('#summernote-editor').summernote({
+      dialogsInBody: true,
+      height: 150,
+      placeholder: 'Write your message here',
+      toolbar: [
+        ['font', ['bold', 'underline', 'italic']],
+        ['insert', ['link', 'picture']],
+      ],
+    })
+
+    // Toggle Starred / Unstarred
+    for (const el of document.querySelectorAll('.btn-starred')) {
+      const tr      = el.closest('tr')
+      const starred = tr.classList.contains('starred')
+      el.title      = starred ? 'Starred' : 'Not starred' // fill title
+      starred ? el.classList.add('active') : el.classList.remove('active') // toggle 'active' class
+      el.addEventListener('click', function () {
+        tr.classList.toggle('starred') // toggle 'starred' class
+        el.title = this.classList.contains('active') ? 'Not starred' : 'Starred' // update title
+      })
+    }
+
+    // Select options
+    for (const el of document.querySelectorAll('[data-toggle="mail-checkbox"]')) {
+      el.addEventListener('click', function () {
+        const allcb = 'tr > td:first-child input[type="checkbox"], tr > th:first-child input[type="checkbox"]'
+        for (const el of this.closest('table').querySelectorAll(allcb)) {
+          el.checked && el.click() // uncheck all
+        }
+        let selector
+        switch (this.dataset.check) {
+          case 'all': selector = allcb; break;
+          case 'read': selector = 'tbody tr:not(.unread) > td:first-child input[type="checkbox"]'; break;
+          case 'unread': selector = 'tbody tr.unread > td:first-child input[type="checkbox"]'; break;
+          case 'starred': selector = 'tbody tr.starred > td:first-child input[type="checkbox"]'; break;
+          case 'unstarred': selector = 'tbody tr:not(.starred) > td:first-child input[type="checkbox"]'; break;
+        }
+        for (const cb of this.closest('table').querySelectorAll(selector)) {
+          !cb.checked && cb.click()
+        }
+      })
+    }
+
+    // Show mail content
+    const tabPane = document.querySelector('#tab-content-mail').querySelectorAll('.tab-pane')
+    for (const el of document.querySelectorAll('.list-mail-item-subject')) {
+      el.addEventListener('click', function (e) {
+        for (const tp of tabPane) {
+          tp.setAttribute('hidden', true) // hide all tab pane
+        }
+        document.querySelector('#mail-content').removeAttribute('hidden') // unhide mail-content
+        e.preventDefault()
+      })
+    }
+
+    // Back to inbox list
+    for (const el of document.querySelectorAll('.to-inbox')) {
+      el.addEventListener('click', function (e) {
+        for (const tp of tabPane) {
+          tp.removeAttribute('hidden') // unhide all tab pane
+        }
+        document.querySelector('#mail-content').setAttribute('hidden', true) // hide mail-content
+        e.preventDefault()
+      })
+    }
+
+  }).then(() => App.stopLoading())
+</script>

@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Font & Icon -->
+  <link href="../font/roboto.min.css" rel="stylesheet">
+  <link href="../font/roboto-condensed.min.css" rel="stylesheet">
+  <link href="../../plugins/material-design-icons-iconfont/material-design-icons.min.css" rel="stylesheet">
+  <link href="../../plugins/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Plugins -->
+  <!-- CSS plugins goes here -->
+
+  <!-- Main Style -->
+  <link rel="stylesheet" href="../css/style.min.css" id="main-css">
+  <link rel="stylesheet" href="../css/sidebar-blue.min.css" id="sidebar-css">
+
+  <title>Mimity Admin</title>
+</head>
+
+<body class="sticky-navbar">
+
+  <!-- Ajax loader -->
+  <div id="ajaxloader" class="fade"></div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+
+    <!-- Sidebar header -->
+    <div class="sidebar-header">
+      <a href="index.html" class="logo">
+        <img src="../img/logo-white.svg" alt="Logo" id="main-logo">
+        Mimity Admin
+      </a>
+      <a href="#" class="nav-link nav-icon rounded-circle ml-auto" data-toggle="sidebar">
+        <i class="material-icons">close</i>
+      </a>
+    </div>
+    <!-- /Sidebar header -->
+
+    <!-- Sidebar body -->
+    <div class="sidebar-body">
+      <ul class="nav nav-sub" id="menu">
+        <li class="nav-label">DASHBOARD</li>
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="#dashboard.html" data-breadcrumb="false"><i class="fa fa-shopping-basket"></i>Sales Monitoring</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="#dashboard2.html" data-breadcrumb="false"><i class="fa fa-globe"></i>Website Analytics</a>
+        </li>
+        <li class="nav-label">UI DESIGN</li>
+        <li class="nav-item">
+          <a class="nav-link has-icon dropdown-toggle" href="#"><i class="material-icons">pie_chart</i>Charts</a>
+          <ul>
+            <li><a href="#chart-line.html">Line Charts</a></li>
+            <li><a href="#chart-bar.html">Bar Charts</a></li>
+            <li><a href="#chart-radar.html">Radar Charts</a></li>
+            <li><a href="#chart-doughnutpie.html">Doughnut and Pie</a></li>
+            <li><a href="#sparkline.html">Sparkline</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon dropdown-toggle" href="#"><i class="material-icons">check_box_outline_blank</i>UI Elements</a>
+          <ul>
+            <li><a href="#accordion.html">Accordion</a></li>
+            <li><a href="#alerts.html">Alerts</a></li>
+            <li><a href="#badge.html">Badge</a></li>
+            <li><a href="#breadcrumb.html">Breadcrumb</a></li>
+            <li><a href="#buttons.html">Buttons</a></li>
+            <li><a href="#cards.html">Cards</a></li>
+            <li><a href="#carousel.html">Carousel</a></li>
+            <li><a href="#collapse.html">Collapse</a></li>
+            <li><a href="#dropdowns.html">Dropdowns</a></li>
+            <li><a href="#lists.html">List Group</a></li>
+            <li><a href="#media-object.html">Media Object</a></li>
+            <li><a href="#modal.html">Modal</a></li>
+            <li><a href="#navigation.html">Navigation</a></li>
+            <li><a href="#notifications.html">Notifications</a></li>
+            <li><a href="#pagination.html">Pagination</a></li>
+            <li><a href="#popovers.html">Popovers</a></li>
+            <li><a href="#progress.html">Progress Bars</a></li>
+            <li><a href="#sortable.html">Sortable List</a></li>
+            <li><a href="#steps.html">Steps</a></li>
+            <li><a href="#tooltips.html">Tooltips</a></li>
+            <li><a href="#typography.html">Typography</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon dropdown-toggle" href="#"><i class="material-icons">table_chart</i>Tables</a>
+          <ul>
+            <li><a href="#table-basic.html">Table Basic</a></li>
+            <li><a href="#table-advanced.html">Table Advanced</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon dropdown-toggle" href="#"><i class="material-icons">notes</i>Forms</a>
+          <ul>
+            <li><a href="#form-elements.html">Form Elements</a></li>
+            <li><a href="#input-group.html">Input Group</a></li>
+            <li><a href="#input-masks.html">Input Masks</a></li>
+            <li><a href="#date-picker.html">Date Picker</a></li>
+            <li><a href="#color-picker.html">Color Picker</a></li>
+            <li><a href="#bootstrap-select.html">Bootstrap Select</a></li>
+            <li><a href="#bootstrap-touchspin.html">Bootstrap TouchSpin</a></li>
+            <li><a href="#range-slider.html">Range Slider</a></li>
+            <li><a href="#text-editor.html">Text Editor</a></li>
+            <li><a href="#markdown-parser.html">Markdown Parser</a></li>
+            <li><a href="#form-layouts.html">Form Layouts</a></li>
+            <li><a href="#form-validation.html">Form Validation</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon dropdown-toggle" href="#"><i class="material-icons">people</i>User</a>
+          <ul>
+            <li><a href="#user-profile.html">User Profile</a></li>
+            <li><a href="#user-list.html">Users List</a></li>
+            <li><a href="#user-grid.html">Users Grid</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon dropdown-toggle" href="#"><i class="material-icons">error_outline</i>Error Pages</a>
+          <ul>
+            <li><a href="../html/error-404.html">Page Not Found</a></li>
+            <li><a href="../html/error-500.html">Internal Server Error</a></li>
+            <li><a href="../html/error-503.html">Service Unavailable</a></li>
+            <li><a href="../html/error-505.html">Forbidden Access</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="#calendar.html"><i class="material-icons">event</i>Calendar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="#images.html"><i class="material-icons">photo</i>Images</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="#file-manager.html" data-breadcrumb="false"><i class="material-icons">folder_open</i>File Manager</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="#mail.html"><i class="material-icons">mail_outline</i>Mail<span class="badge badge-pill badge-warning ml-auto">2</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="#pricing.html"><i class="material-icons">list_alt</i>Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="#timeline.html"><i class="material-icons">access_time</i>Timeline</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="#invoice.html"><i class="fa fa-file-invoice-dollar"></i>Invoice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="../html/login.html"><i class="material-icons">exit_to_app</i>Login</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /Sidebar body -->
+
+  </div>
+  <!-- /Sidebar -->
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- Main header -->
+    <div class="main-header">
+      <a href="index.html" class="logo d-none d-lg-flex">
+        <img src="../img/logo.svg" alt="Logo" id="main-logo">
+        Mimity Admin
+      </a>
+      <a class="nav-link nav-icon rounded-circle d-lg-none" href="#" data-toggle="sidebar"><i class="material-icons">menu</i></a>
+      <form class="form-inline ml-3 d-none d-md-flex">
+        <span class="input-icon">
+          <i class="material-icons">search</i>
+          <input type="search" placeholder="Search..." class="form-control shadow-none bg-light border-0">
+        </span>
+      </form>
+      <ul class="nav nav-circle nav-gap-x-1 ml-auto">
+        <li class="nav-item d-md-none"><a class="nav-link nav-icon" data-toggle="modal" href="#searchModal"><i class="material-icons">search</i></a></li>
+        <li class="nav-item d-none d-sm-block"><a class="nav-link nav-icon" href="" id="refreshPage"><i class="material-icons">refresh</i></a></li>
+        <li class="nav-item dropdown nav-notif">
+          <a class="nav-link nav-icon dropdown-toggle no-caret" href="#" data-toggle="dropdown" data-display="static">
+            <i class="material-icons">color_lens</i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right shadow border-0 p-3">
+            <form>
+              <h6>Navigation theme</h6>
+              <div class="custom-color custom-color-lg">
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-blue.min.css" id="sidebar-theme-blue" class="custom-control-input" checked>
+                  <label class="rounded-circle" for="sidebar-theme-blue" style="background-color:#2b579a"></label>
+                </div>
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-cyan.min.css" id="sidebar-theme-cyan" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-cyan" style="background-color:#006064"></label>
+                </div>
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-gray.min.css" id="sidebar-theme-gray" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-gray" style="background-color:#37474f"></label>
+                </div>
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-green.min.css" id="sidebar-theme-green" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-green" style="background-color:#217346"></label>
+                </div>
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-pink.min.css" id="sidebar-theme-pink" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-pink" style="background-color:#ad1457"></label>
+                </div>
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-purple.min.css" id="sidebar-theme-purple" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-purple" style="background-color:#7151c8"></label>
+                </div>
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-red.min.css" id="sidebar-theme-red" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-red" style="background-color:#b7472a"></label>
+                </div>
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-dark.min.css" id="sidebar-theme-dark" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-dark" style="background-color:#272822"></label>
+                </div>
+                <div class="color-item color-item-light">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-white.min.css" id="sidebar-theme-white" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-white" style="background-color:#fff"></label>
+                </div>
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-royal.min.css" id="sidebar-theme-royal" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-royal" style="background-color:#243b55"></label>
+                </div>
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-ash.min.css" id="sidebar-theme-ash" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-ash" style="background-color:#606c88"></label>
+                </div>
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-crimson.min.css" id="sidebar-theme-crimson" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-crimson" style="background-color:#573662"></label>
+                </div>
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-namn.min.css" id="sidebar-theme-namn" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-namn" style="background-color:#9b3333"></label>
+                </div>
+                <div class="color-item">
+                  <input type="radio" name="sidebar-theme" value="../css/sidebar-frost.min.css" id="sidebar-theme-frost" class="custom-control-input">
+                  <label class="rounded-circle" for="sidebar-theme-frost" style="background-color:#00275a"></label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="nav-item dropdown nav-notif">
+          <a class="nav-link nav-icon has-badge dropdown-toggle no-caret" href="#" data-toggle="dropdown" data-display="static">
+            <i class="material-icons">notifications</i>
+            <span class="badge badge-pill badge-primary">4</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right shadow border-0 p-0">
+            <form>
+              <div class="card border-0">
+                <div class="card-header bg-primary text-white">
+                  <i class="material-icons mr-2">notifications</i> 4 Notifications
+                </div>
+                <div class="card-body p-1 font-size-sm">
+                  <div class="list-group list-group-sm list-group-flush">
+                    <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                      <div class="media">
+                        <span class="bg-primary-faded text-primary btn-icon rounded-circle"><i class="material-icons">person_add</i></span>
+                        <div class="media-body ml-2">
+                          5 New members joined today
+                          <div class="small text-muted mt-1 d-flex align-items-center">
+                            <i class="material-icons mr-1 font-size-sm">access_time</i> 5 minutes ago
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                      <div class="media">
+                        <span class="bg-info-faded text-info btn-icon rounded-circle"><i class="material-icons">comment</i></span>
+                        <div class="media-body ml-2">
+                          2 New comments
+                          <div class="small text-muted mt-1 d-flex align-items-center">
+                            <i class="material-icons mr-1 font-size-sm">access_time</i> 10 minutes ago
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                      <div class="media">
+                        <span class="bg-success-faded text-success btn-icon rounded-circle"><i class="material-icons">shopping_cart</i></span>
+                        <div class="media-body ml-2">
+                          10+ New Orders
+                          <div class="small text-muted mt-1 d-flex align-items-center">
+                            <i class="material-icons mr-1 font-size-sm">access_time</i> 15 minutes ago
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="javascript:void(0)" class="list-group-item list-group-item-action">
+                      <div class="media">
+                        <span class="bg-warning-faded text-warning btn-icon rounded-circle"><i class="material-icons">person</i></span>
+                        <div class="media-body ml-2">
+                          Complete your account details
+                          <div class="small text-muted mt-1 d-flex align-items-center">
+                            <i class="material-icons mr-1 font-size-sm">access_time</i> 20 minutes ago
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="javascript:void(0)">See all notifications &rsaquo;</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-icon has-badge" href="#chatModal" data-toggle="modal">
+            <i class="material-icons">chat</i>
+            <span class="badge badge-pill badge-warning">2</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav nav-pills">
+        <li class="nav-link-divider mx-2"></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link has-img dropdown-toggle px-2" href="#" data-toggle="dropdown">
+            <img src="../img/user.svg" alt="Admin" class="rounded-circle mr-2">
+            <span class="d-none d-sm-block">Admin</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right shadow border-0 p-0">
+            <div class="card border-0">
+              <div class="card-header flex-column px-5">
+                <img src="../img/user.svg" alt="Admin" class="rounded-circle mb-2" width="75" height="75">
+                <h6>Admin</h6>
+                <small class="text-muted">Administrator</small>
+              </div>
+              <div class="list-group list-group-flush list-group-sm list-group-borderless py-2">
+                <a href="#" class="list-group-item list-group-item-action has-icon"><i class="material-icons mr-2">person</i>My Profile</a>
+                <a href="#" class="list-group-item list-group-item-action has-icon"><i class="material-icons mr-2">settings</i>Settings</a>
+                <a href="../html/login.html" class="list-group-item list-group-item-action has-icon text-danger"><i class="material-icons mr-2">exit_to_app</i>Logout</a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- /Main header -->
+
+    <!-- Main navbar -->
+    <nav class="main-navbar navbar main-navbar navbar-expand navbar-light shadow-sm sticky-top">
+      <a class="nav-link nav-icon rounded-circle" data-scroll="left" href="#"><i class="material-icons">chevron_left</i></a>
+      <div class="navbar-collapse">
+        <div class="navbar-nav nav-pills nav-gap-x-1">
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle has-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference=".main">
+              <i class="material-icons">dashboard</i>Dashboard
+            </a>
+            <div class="dropdown-menu font-size-sm">
+              <a class="dropdown-item" href="#dashboard.html" data-breadcrumb="false">Sales Monitoring</a>
+              <a class="dropdown-item" href="#dashboard2.html" data-breadcrumb="false">Website Analytics</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle has-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference=".main">
+              <i class="material-icons">pie_chart</i>Charts
+            </a>
+            <div class="dropdown-menu font-size-sm">
+              <a class="dropdown-item" href="#chart-line.html">Line Charts</a>
+              <a class="dropdown-item" href="#chart-bar.html">Bar Charts</a>
+              <a class="dropdown-item" href="#chart-radar.html">Radar Charts</a>
+              <a class="dropdown-item" href="#chart-doughnutpie.html">Doughnut and Pie</a>
+              <a class="dropdown-item" href="#sparkline.html">Sparkline</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle has-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-cube"></i>UI Elements
+            </a>
+            <div class="dropdown-menu font-size-sm">
+              <a class="dropdown-item" href="#accordion.html">Accordion</a>
+              <a class="dropdown-item" href="#alerts.html">Alerts</a>
+              <a class="dropdown-item" href="#badge.html">Badge</a>
+              <a class="dropdown-item" href="#breadcrumb.html">Breadcrumb</a>
+              <a class="dropdown-item" href="#buttons.html">Buttons</a>
+              <a class="dropdown-item" href="#cards.html">Cards</a>
+              <a class="dropdown-item" href="#carousel.html">Carousel</a>
+              <a class="dropdown-item" href="#collapse.html">Collapse</a>
+              <a class="dropdown-item" href="#dropdowns.html">Dropdowns</a>
+              <a class="dropdown-item" href="#lists.html">List Group</a>
+              <a class="dropdown-item" href="#media-object.html">Media Object</a>
+              <a class="dropdown-item" href="#modal.html">Modal</a>
+              <a class="dropdown-item" href="#navigation.html">Navigation</a>
+              <a class="dropdown-item" href="#notifications.html">Notifications</a>
+              <a class="dropdown-item" href="#pagination.html">Pagination</a>
+              <a class="dropdown-item" href="#popovers.html">Popovers</a>
+              <a class="dropdown-item" href="#progress.html">Progress Bars</a>
+              <a class="dropdown-item" href="#sortable.html">Sortable List</a>
+              <a class="dropdown-item" href="#steps.html">Steps</a>
+              <a class="dropdown-item" href="#tooltips.html">Tooltips</a>
+              <a class="dropdown-item" href="#typography.html">Typography</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle has-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-table"></i>Tables
+            </a>
+            <div class="dropdown-menu font-size-sm">
+              <a class="dropdown-item" href="#table-basic.html">Table Basic</a>
+              <a class="dropdown-item" href="#table-advanced.html">Table Advanced</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle has-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="material-icons">notes</i>Forms
+            </a>
+            <div class="dropdown-menu font-size-sm">
+              <a class="dropdown-item" href="#form-elements.html">Form Elements</a>
+              <a class="dropdown-item" href="#input-group.html">Input Group</a>
+              <a class="dropdown-item" href="#input-masks.html">Input Masks</a>
+              <a class="dropdown-item" href="#date-picker.html">Date Picker</a>
+              <a class="dropdown-item" href="#color-picker.html">Color Picker</a>
+              <a class="dropdown-item" href="#bootstrap-select.html">Bootstrap Select</a>
+              <a class="dropdown-item" href="#bootstrap-touchspin.html">Bootstrap TouchSpin</a>
+              <a class="dropdown-item" href="#range-slider.html">Range Slider</a>
+              <a class="dropdown-item" href="#text-editor.html">Text Editor</a>
+              <a class="dropdown-item" href="#markdown-parser.html">Markdown Parser</a>
+              <a class="dropdown-item" href="#form-layouts.html">Form Layouts</a>
+              <a class="dropdown-item" href="#form-validation.html">Form Validation</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle has-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="material-icons">people</i>User
+            </a>
+            <div class="dropdown-menu font-size-sm">
+              <a class="dropdown-item" href="#user-profile.html">User Profile</a>
+              <a class="dropdown-item" href="#user-list.html">Users List</a>
+              <a class="dropdown-item" href="#user-grid.html">Users Grid</a>
+            </div>
+          </div>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle has-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="material-icons">error_outline</i>Error Pages
+            </a>
+            <div class="dropdown-menu font-size-sm">
+              <a class="dropdown-item" href="../html/error-404.html">Page Not Found</a>
+              <a class="dropdown-item" href="../html/error-500.html">Internal Server Error</a>
+              <a class="dropdown-item" href="../html/error-503.html">Service Unavailable</a>
+              <a class="dropdown-item" href="../html/error-505.html">Forbidden Access</a>
+            </div>
+          </div>
+          <a class="nav-item nav-link has-icon" href="#calendar.html"><i class="material-icons">event</i>Calendar</a>
+          <a class="nav-item nav-link has-icon" href="#images.html"><i class="material-icons">photo</i>Images</a>
+          <a class="nav-item nav-link has-icon" href="#file-manager.html"><i class="material-icons">folder_open</i>File Manager</a>
+          <a class="nav-item nav-link has-icon" href="#mail.html"><i class="material-icons">mail_outline</i>Mail</a>
+          <a class="nav-item nav-link has-icon" href="#pricing.html"><i class="material-icons">list_alt</i>Pricing</a>
+          <a class="nav-item nav-link has-icon" href="#timeline.html"><i class="material-icons">access_time</i>Timeline</a>
+          <a class="nav-item nav-link has-icon" href="#invoice.html"><i class="fa fa-file-invoice-dollar"></i>Invoice</a>
+          <a class="nav-item nav-link has-icon" href="../html/login.html"><i class="material-icons">exit_to_app</i>Login</a>
+        </div>
+      </div>
+      <a class="nav-link nav-icon rounded-circle" data-scroll="right" href="#"><i class="material-icons">chevron_right</i></a>
+    </nav>
+    <!-- /Main navbar -->
+
+    <!-- Main body -->
+    <div class="main-body">
+
+      <!-- AJAX CONTENT GOES HERE -->
+
+    </div>
+    <!-- /Main body -->
+
+  </div>
+  <!-- /Main -->
+
+  <!-- Search Modal -->
+  <div class="modal" id="searchModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-1 p-lg-3">
+          <form>
+            <div class="input-group input-group-lg input-group-search">
+              <div class="input-group-prepend">
+                <button class="btn btn-text-secondary btn-icon btn-lg rounded-circle" type="button" data-dismiss="modal">
+                  <i class="material-icons">chevron_left</i>
+                </button>
+              </div>
+              <input type="search" class="form-control form-control-lg border-0 shadow-none mx-1 px-0 px-lg-3" id="searchInput" placeholder="Search..." autocomplete="off" required>
+              <div class="input-group-append">
+                <button class="btn btn-text-secondary btn-icon btn-lg rounded-circle" type="submit">
+                  <i class="material-icons">search</i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Search Modal -->
+
+  <!-- Chat Modal -->
+  <div class="modal fade modal-content-right chat-modal" id="chatModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-scrollable modal-sm" role="document">
+
+      <!-- Conversation -->
+      <div class="modal-content active" id="conversation">
+        <div class="modal-header">
+          <h5 class="modal-title">Conversations</h5>
+          <button class="btn btn-icon btn-sm btn-text-secondary rounded-circle" type="button" data-dismiss="modal">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img online"><img src="../../dist/img/user1.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Estella Griffin</h6>
+                  <p class="msg-preview unread">How will you get there ? <span class="badge badge-warning badge-pill">2</span></p>
+                </div>
+                <small class="msg-preview-time">11:45 AM</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img online"><img src="../../dist/img/user2.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Herbert Frazier</h6>
+                  <p class="msg-preview"><span class="msg-status"></span> You: Thanks for the advice.</p>
+                </div>
+                <small class="msg-preview-time">10:05 AM</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user3.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Laura Matthews</h6>
+                  <p class="msg-preview">Sounds good.</p>
+                </div>
+                <small class="msg-preview-time">Monday</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user4.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Randy Sanders</h6>
+                  <p class="msg-preview">You are welcome.</p>
+                  <small class="msg-preview-time">Yesterday</small>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user5.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Harriett Pearson</h6>
+                  <p class="msg-preview"><span class="msg-status read"></span> You: Sure, I can work well with...</p>
+                </div>
+                <small class="msg-preview-time">Sep 30</small>
+              </div>
+            </a>
+          </div>
+        </div>
+        <button class="btn btn-icon btn-primary rounded-circle shadow btn-lg btn-toggle-contact" type="button" data-toggle="chat" data-target="#contacts">
+          <i class="material-icons">add</i>
+        </button>
+      </div>
+      <!-- /Conversation -->
+
+      <!-- Contacts -->
+      <div class="modal-content" id="contacts">
+        <div class="modal-header justify-content-start">
+          <button class="btn btn-icon btn-light bg-white btn-sm rounded-circle mr-3" type="button" data-toggle="chat" data-target="#conversation">
+            <i class="material-icons">chevron_left</i>
+          </button>
+          <h5 class="modal-title">Contacts</h5>
+        </div>
+        <div class="modal-body p-0">
+          <div class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img online"><img src="../../dist/img/user1.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Estella Griffin</h6>
+                  <p class="contact-status online">Online</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img online"><img src="../../dist/img/user2.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Herbert Frazier</h6>
+                  <p class="contact-status online">Online</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user3.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Laura Matthews</h6>
+                  <p class="contact-status">07:01 PM</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user4.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Randy Sanders</h6>
+                  <p class="contact-status">Yesterday</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user5.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Harriett Pearson</h6>
+                  <p class="contact-status">Monday</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img online"><img src="../../dist/img/user1.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Erik McGuire</h6>
+                  <p class="contact-status online">Online</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img online"><img src="../../dist/img/user2.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Leon Lawrence</h6>
+                  <p class="contact-status online">Online</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user3.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Gussie Walker</h6>
+                  <p class="contact-status">07:01 PM</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user4.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Agnes Watts</h6>
+                  <p class="contact-status">Yesterday</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="media">
+                <div class="img offline"><img src="../../dist/img/user5.svg" alt="user" class="rounded-circle" width="45"></div>
+                <div class="media-body">
+                  <h6>Johanna Larson</h6>
+                  <p class="contact-status">Monday</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /Contacts -->
+
+      <!-- Conversation detail -->
+      <div class="modal-content" id="conversation-detail">
+        <div class="modal-header justify-content-start align-items-center py-0" style="height:63px">
+          <button class="btn btn-icon btn-light bg-white btn-sm rounded-circle mr-3" type="button" data-toggle="chat" data-target="#conversation">
+            <i class="material-icons">chevron_left</i>
+          </button>
+          <div class="media">
+            <div class="img online"><img src="../../dist/img/user1.svg" alt="user" class="rounded-circle" width="45"></div>
+            <div class="media-body">
+              <h6>Estella Griffin</h6>
+              <p class="contact-status mt-0 online">Online</p>
+            </div>
+          </div>
+          <button class="btn btn-icon btn-faded-light btn-sm rounded-circle ml-auto" type="button" data-toggle="dropdown">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right font-size-sm">
+            <button class="dropdown-item has-icon" type="button"><i class="material-icons mr-2">clear</i>Clear history</button>
+            <button class="dropdown-item has-icon" type="button"><i class="material-icons mr-2">volume_off</i>Mute notifications</button>
+            <button class="dropdown-item has-icon text-danger" type="button"><i class="material-icons mr-2">delete</i>Delete chat</button>
+          </div>
+        </div>
+        <div class="modal-body px-2">
+
+          <!-- CHAT YESTERDAY -->
+          <div class="chat-divider mt-0"><span>Yesterday</span></div>
+          <div class="chat-msg">
+            <div class="popover popover-static bs-popover-right">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi laudantium aspernatur sequi quas laboriosam expedita illo at doloremque eaque temporibus libero corporis, asperiores possimus ipsa nemo sint quidem, ex nulla?</p>
+                <time class="chat-time">10:01</time>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg right">
+            <div class="popover popover-static bs-popover-left">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <time class="chat-time">10:02</time>
+                <span class="msg-status read"></span>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg">
+            <div class="popover popover-static bs-popover-right">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur </p>
+                <time class="chat-time">10:03</time>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg right">
+            <div class="popover popover-static bs-popover-left">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, maxime.</p>
+                <time class="chat-time">10:04</time>
+                <span class="msg-status read"></span>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg">
+            <div class="popover popover-static bs-popover-right">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <time class="chat-time">10:05</time>
+              </div>
+            </div>
+          </div>
+          <!-- /CHAT YESTERDAY -->
+
+          <!-- CHAT TODAY -->
+          <div class="chat-divider"><span>Today</span></div>
+          <div class="chat-msg">
+            <div class="popover popover-static bs-popover-right">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet., consectetur</p>
+                <time class="chat-time">10:00</time>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg right">
+            <div class="popover popover-static bs-popover-left">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus maxime consectetur blanditiis eligendi, necessitatibus distinctio architecto porro quis, ratione laboriosam, obcaecati a amet nulla recusandae, fuga asperiores. Architecto fugit, adipisci?</p>
+                <time class="chat-time">10:01</time>
+                <span class="msg-status read"></span>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg">
+            <div class="popover popover-static bs-popover-right">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, vero.</p>
+                <ul class="list-unstyled chat-attach">
+                  <li><a href="javascript:void(0)"><i class="fa fa-paperclip"></i> document.zip</a></li>
+                </ul>
+                <time class="chat-time">10:02</time>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg right">
+            <div class="popover popover-static bs-popover-left">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <ul class="list-unstyled chat-attach">
+                  <li><a href="javascript:void(0)"><i class="fa fa-paperclip"></i> update.zip</a></li>
+                </ul>
+                <time class="chat-time">10:03</time>
+                <span class="msg-status read"></span>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg">
+            <div class="popover popover-static bs-popover-right">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                Lorem ipsum dolor sit amet, consectetur <br/>
+                <div class="chat-attach-img">
+                  <a href="../img/gallery/6m.jpeg" target="_blank">
+                    <img src="../img/gallery/6m.jpeg" alt="Chat image" class="img-fluid">
+                  </a>
+                </div>
+                <time class="chat-time">10:04</time>
+              </div>
+            </div>
+          </div>
+          <div class="chat-msg right">
+            <div class="popover popover-static bs-popover-left">
+              <div class="arrow"></div>
+              <div class="popover-body">
+                <p>Lorem ipsum dolor <a href="javascript:void(0)">http://example.com</a> sit amet, consectetur </p>
+                <time class="chat-time">10:05</time>
+                <span class="msg-status"></span>
+              </div>
+            </div>
+          </div>
+          <!-- /CHAT TODAY -->
+
+        </div>
+        <div class="modal-footer p-1">
+          <form class="chat-form">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label class="btn btn-icon bg-white chat-btn-attach">
+                  <input type="file" multiple>
+                  <span><i class="material-icons">attachment</i></span>
+                </label>
+              </div>
+              <textarea rows="1" class="form-control autosize shadow-none" placeholder="Write a message..."></textarea>
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary btn-icon border-0 shadow-none rounded-circle ml-1" type="button"><i class="material-icons">chevron_right</i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- /Conversation detail -->
+
+    </div>
+  </div>
+  <!-- /Chat Modal -->
+
+  <!-- Backdrop for expanded sidebar -->
+  <div class="sidebar-backdrop" id="sidebarBackdrop" data-toggle="sidebar"></div>
+
+  <script src="../js/script.min.js"></script>
+  <script src="../js/ajax.min.js" id="ajax-js"></script>
+
+  <!-- Plugins -->
+  <!-- JS plugins goes here -->
+
+  <script>
+    App.ajax({
+      'container': '.main-body',
+      'default': 'dashboard.html',
+      'breadcrumb': true
+    })
+  </script>
+
+</body>
+
+</html>

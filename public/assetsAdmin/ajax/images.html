@@ -1,0 +1,270 @@
+<div class="row">
+  <div class="col">
+    <section id="section1">
+      <h5>Responsive images</h5>
+      <p class="text-muted font-size-sm">
+        Images in Bootstrap are made responsive with <code>.img-fluid</code>. <code>max-width: 100%;</code> and <code>height: auto;</code> are applied to the image so that it scales with the parent element.
+      </p>
+      <div style="max-width: 500px">
+        <img src="../img/gallery/4.jpeg" class="img-fluid" alt="Responsive image">
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section2">
+      <h5>Image thumbnails</h5>
+      <p class="text-muted font-size-sm">
+        Use <code>.img-thumbnail</code> to give an image a rounded 1px border appearance.
+      </p>
+      <img src="../img/gallery/4.jpeg" class="img-thumbnail" alt="Responsive image" width="200">
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section3">
+      <h5>User image</h5>
+      <p class="text-muted font-size-sm">
+        Used as a user image, also with online or offline badge.
+      </p>
+      <div class="img">
+        <img src="../img/user1.svg" alt="User" class="rounded-circle" width="50">
+      </div>
+      <div class="img online">
+        <img src="../img/user2.svg" alt="User" class="rounded-circle" width="50">
+      </div>
+      <div class="img offline">
+        <img src="../img/user3.svg" alt="User" class="rounded-circle" width="50">
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section4">
+      <h5>Background image</h5>
+      <p class="text-muted font-size-sm">
+        Use the image as the background of an element, regardless of the size of the element, the background image will adjust as the background cover
+      </p>
+      <div class="card text-white border-0" style="max-width: 400px" data-cover="../img/gallery/4.jpeg">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="javascript:void(0)" class="text-light text-decoration-underline">Some link</a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section5">
+      <h5>Overlay & captions</h5>
+      <p class="text-muted font-size-sm">
+        Show Overlay & captions on hover
+      </p>
+      <div class="img rounded">
+        <img src="../img/gallery/3s.jpeg" alt="Image">
+        <div class="overlay bg-dark"></div>
+        <div class="overlay-content text-center text-white">Sample caption on hover</div>
+      </div>
+      <div class="img rounded">
+        <img src="../img/gallery/3s.jpeg" alt="Image">
+        <!-- <div class="overlay bg-dark"></div> -->
+        <div class="overlay-content text-center justify-content-end">
+          <div class="btn-group mb-1" role="group">
+            <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none"><i class="material-icons">zoom_in</i></button>
+            <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none"><i class="material-icons">edit</i></button>
+            <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none text-danger"><i class="material-icons">delete</i></button>
+          </div>
+        </div>
+      </div>
+      <div class="img rounded">
+        <img src="../img/gallery/3s.jpeg" alt="Image">
+        <!-- <div class="overlay bg-dark"></div> -->
+        <div class="overlay-content overlay-show text-center justify-content-end">
+          <div class="btn-group mb-1" role="group">
+            <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none"><i class="material-icons">zoom_in</i></button>
+            <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none"><i class="material-icons">edit</i></button>
+            <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none text-danger"><i class="material-icons">delete</i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section6">
+      <h5>Gallery</h5>
+      <p class="text-muted font-size-sm">
+        Photoswipe javaScript image gallery for mobile and desktop.
+      </p>
+      <div class="list-with-gap" id="example-gallery">
+        <div class="img rounded">
+          <img src="../img/gallery/1s.jpeg" alt="Image" width="150">
+          <div class="overlay bg-dark"></div>
+          <div class="overlay-content text-center justify-content-end">
+            <div class="btn-group btn-group-sm mb-1" role="group">
+              <button data-index="1" data-size="1280x853" data-target="../img/gallery/1.jpeg" type="button" class="open-ps btn btn-text-light btn-icon rounded-circle shadow-none">
+                <i class="material-icons">zoom_in</i>
+              </button>
+              <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none"><i class="material-icons">edit</i></button>
+              <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none text-danger"><i class="material-icons">delete</i></button>
+            </div>
+          </div>
+        </div>
+        <div class="img rounded">
+          <img src="../img/gallery/2s.jpeg" alt="Image" width="150">
+          <div class="overlay bg-dark"></div>
+          <div class="overlay-content text-center justify-content-end">
+            <div class="btn-group btn-group-sm mb-1" role="group">
+              <button data-index="2" data-size="1280x853" data-target="../img/gallery/2.jpeg" type="button" class="open-ps btn btn-text-light btn-icon rounded-circle shadow-none">
+                <i class="material-icons">zoom_in</i>
+              </button>
+              <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none"><i class="material-icons">edit</i></button>
+              <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none text-danger"><i class="material-icons">delete</i></button>
+            </div>
+          </div>
+        </div>
+        <div class="img rounded">
+          <img src="../img/gallery/3s.jpeg" alt="Image" width="150">
+          <div class="overlay bg-dark"></div>
+          <div class="overlay-content text-center justify-content-end">
+            <div class="btn-group btn-group-sm mb-1" role="group">
+              <button data-index="3" data-size="1280x853" data-target="../img/gallery/3.jpeg" type="button" class="open-ps btn btn-text-light btn-icon rounded-circle shadow-none">
+                <i class="material-icons">zoom_in</i>
+              </button>
+              <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none"><i class="material-icons">edit</i></button>
+              <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none text-danger"><i class="material-icons">delete</i></button>
+            </div>
+          </div>
+        </div>
+        <div class="img rounded">
+          <img src="../img/gallery/4s.jpeg" alt="Image" width="150">
+          <div class="overlay bg-dark"></div>
+          <div class="overlay-content text-center justify-content-end">
+            <div class="btn-group btn-group-sm mb-1" role="group">
+              <button data-index="4" data-size="1280x853" data-target="../img/gallery/4.jpeg" type="button" class="open-ps btn btn-text-light btn-icon rounded-circle shadow-none">
+                <i class="material-icons">zoom_in</i>
+              </button>
+              <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none"><i class="material-icons">edit</i></button>
+              <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none text-danger"><i class="material-icons">delete</i></button>
+            </div>
+          </div>
+        </div>
+        <div class="img rounded">
+          <img src="../img/gallery/5s.jpeg" alt="Image" width="150">
+          <div class="overlay bg-dark"></div>
+          <div class="overlay-content text-center justify-content-end">
+            <div class="btn-group btn-group-sm mb-1" role="group">
+              <button data-index="5" data-size="1280x853" data-target="../img/gallery/5.jpeg" type="button" class="open-ps btn btn-text-light btn-icon rounded-circle shadow-none">
+                <i class="material-icons">zoom_in</i>
+              </button>
+              <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none"><i class="material-icons">edit</i></button>
+              <button type="button" class="btn btn-text-light btn-icon rounded-circle shadow-none text-danger"><i class="material-icons">delete</i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="col-3 d-none d-xl-block">
+    <div class="nav-section">
+      <label class="text-muted">On This Page</label>
+      <nav id="navSection" class="nav flex-column">
+        <a href="#section1" class="nav-link nav-link-sm">Responsive images</a>
+        <a href="#section2" class="nav-link nav-link-sm">Image thumbnails</a>
+        <a href="#section3" class="nav-link nav-link-sm">User image</a>
+        <a href="#section4" class="nav-link nav-link-sm">Background image</a>
+        <a href="#section5" class="nav-link nav-link-sm">Overlay & captions</a>
+        <a href="#section6" class="nav-link nav-link-sm">Gallery</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- Photoswipe element-->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter"></div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--share" title="Share"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var plugins = [
+    '../../plugins/photoswipe/photoswipe.min.css',
+    '../../plugins/photoswipe/photoswipe-default-skin/default-skin.min.css',
+    '../../plugins/photoswipe/photoswipe.min.js',
+    '../../plugins/photoswipe/photoswipe-ui-default.min.js',
+  ]
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(plugins, script).then(() => {
+
+    // Collect photoswipe items
+    const parseItem = container => {
+      let items = []
+      for (const el of container.querySelectorAll('.open-ps')) {
+        const size = el.dataset.size.split('x')
+        items.push({
+          src: el.dataset.target,
+          w: parseInt(size[0], 10),
+          h: parseInt(size[1], 10),
+        })
+      }
+      return items
+    }
+
+    // Photoswipe config
+    const openGallery = function (activeIndex, items) {
+      activeIndex = typeof activeIndex !== 'undefined' ? activeIndex - 1 : 0
+      const options = {
+        index: activeIndex,
+        hideAnimationDuration: 0,
+        showAnimationDuration: 0,
+        history: false
+      }
+      const gallery = new PhotoSwipe(document.querySelector('.pswp'), PhotoSwipeUI_Default, items, options)
+      gallery.init()
+    }
+
+    // Gallery
+    const exampleGallery = document.querySelector('#example-gallery')
+    const items = parseItem(exampleGallery)
+    for (const el of exampleGallery.querySelectorAll('.open-ps')) {
+      el.addEventListener('click', function () {
+        openGallery(this.dataset.index, items)
+      })
+    }
+
+  }).then(() => App.stopLoading())
+</script>

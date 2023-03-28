@@ -1,0 +1,201 @@
+<h5>Radar Chart</h5>
+<p class="text-muted font-size-sm">
+  A radar chart is a way of showing multiple data points and the variation between them.<br>
+  They are often useful for comparing the points of two or more different data sets.
+</p>
+
+<div class="row row-cols-md-2 gutters-sm">
+
+  <!-- BASIC -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header">
+        Basic
+        <button type="button" data-action="fullscreen" class="btn btn-sm btn-text-secondary btn-icon rounded-circle shadow-none ml-auto">
+          <i class="material-icons">fullscreen</i>
+        </button>
+      </div>
+      <div class="card-body" style="height: 300px">
+        <canvas id="radar-basic"></canvas>
+      </div>
+    </div>
+  </div>
+  <!-- /BASIC -->
+
+  <!-- SMOOTH -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header">
+        Smooth
+        <button type="button" data-action="fullscreen" class="btn btn-sm btn-text-secondary btn-icon rounded-circle shadow-none ml-auto">
+          <i class="material-icons">fullscreen</i>
+        </button>
+      </div>
+      <div class="card-body" style="height: 300px">
+        <canvas id="radar-chart-smooth"></canvas>
+      </div>
+    </div>
+  </div>
+  <!-- /SMOOTH -->
+
+  <!-- MULTI AXIS -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header">
+        Multi Axis
+        <button type="button" data-action="fullscreen" class="btn btn-sm btn-text-secondary btn-icon rounded-circle shadow-none ml-auto">
+          <i class="material-icons">fullscreen</i>
+        </button>
+      </div>
+      <div class="card-body" style="height: 300px">
+        <canvas id="radar-chart-multi"></canvas>
+      </div>
+    </div>
+  </div>
+  <!-- /MULTI AXIS -->
+
+  <!-- FILLED -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header">
+        Filled
+        <button type="button" data-action="fullscreen" class="btn btn-sm btn-text-secondary btn-icon rounded-circle shadow-none ml-auto">
+          <i class="material-icons">fullscreen</i>
+        </button>
+      </div>
+      <div class="card-body" style="height: 300px">
+        <canvas id="radar-chart-filled"></canvas>
+      </div>
+    </div>
+  </div>
+  <!-- /FILLED -->
+
+</div>
+
+<script>
+  var plugins = [
+    '../../plugins/chart.js/Chart.min.js'
+  ]
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(plugins, script).then(() => {
+
+    // Data example
+    ability = ['PAS', 'SHT', 'PHY', 'DEF', 'SPD', 'DRI']
+    data1   = [ 86, 86, 63, 48, 89, 96 ]
+    messi   = [ 88, 95, 70, 45, 86, 95 ]
+    ronaldo = [ 83, 91, 86, 49, 88, 89 ]
+
+    // Global configuration
+    Chart.defaults.global.elements.line.borderWidth = 1
+    Chart.defaults.global.maintainAspectRatio = false // disable the maintain aspect ratio in options then it uses the available height
+
+    // Fix tooltip not shown: https://github.com/chartjs/Chart.js/issues/6188
+    tooltipCallbackLabel = {
+      label: (tooltipItem, data) => {
+        return data.datasets[tooltipItem.datasetIndex].label + ' : ' + data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index]
+      }
+    }
+
+    /***************** BASIC *****************/
+    new Chart('radar-basic', {
+      type: 'radar',
+      data: {
+        labels: ability,
+        datasets: [{
+          label: 'Ability',
+          fill: false,
+          backgroundColor: Chart.helpers.color(blue).alpha(0.5).rgbString(),
+          borderColor: blue,
+          data: data1
+        }]
+      },
+      options: {
+        tooltips: {
+          callbacks: tooltipCallbackLabel
+        }
+      }
+    })
+
+    /***************** SMOOTH *****************/
+    new Chart('radar-chart-smooth', {
+      type: 'radar',
+      data: {
+        labels: ability,
+        datasets: [{
+          label: 'Ability',
+          fill: false,
+          backgroundColor: Chart.helpers.color(green).alpha(0.5).rgbString(),
+          borderColor: green,
+          tension: 0.4, // add this option to make it 'smooth'
+          data: data1
+        }]
+      },
+      options: {
+        tooltips: {
+          callbacks: tooltipCallbackLabel
+        }
+      }
+    })
+
+    /***************** MULTI AXIS *****************/
+    new Chart('radar-chart-multi', {
+      type: 'radar',
+      data: {
+        labels: ability,
+        datasets: [
+          {
+            label: 'L. Messi',
+            fill: false,
+            backgroundColor: Chart.helpers.color(cyan).alpha(0.5).rgbString(),
+            borderColor: cyan,
+            data: messi
+          },
+          {
+            label: 'C. Ronaldo',
+            fill: false,
+            backgroundColor: Chart.helpers.color(red).alpha(0.5).rgbString(),
+            borderColor: red,
+            data: ronaldo
+          }
+        ]
+      },
+      options: {
+        tooltips: {
+          mode: 'index',
+          callbacks: tooltipCallbackLabel
+        }
+      }
+    })
+
+    /***************** FILLED *****************/
+    new Chart('radar-chart-filled', {
+      type: 'radar',
+      data: {
+        labels: ability,
+        datasets: [
+          {
+            label: 'L. Messi',
+            backgroundColor: Chart.helpers.color(cyan).alpha(0.5).rgbString(),
+            borderColor: cyan,
+            data: messi
+          },
+          {
+            label: 'C. Ronaldo',
+            backgroundColor: Chart.helpers.color(red).alpha(0.5).rgbString(),
+            borderColor: red,
+            data: ronaldo
+          }
+        ]
+      },
+      options: {
+        tooltips: {
+          mode: 'index',
+          callbacks: tooltipCallbackLabel
+        }
+      }
+    })
+
+  }).then(() => App.stopLoading())
+</script>

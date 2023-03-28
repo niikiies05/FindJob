@@ -1,0 +1,184 @@
+<div class="card card-style-1">
+  <div class="card-header border-0">
+    <div class="btn-group btn-group-toggle btn-group-xs ml-auto" data-toggle="buttons">
+      <label class="btn btn-light active">
+        <input type="radio" name="options" value="default" checked=""> Default
+      </label>
+      <label class="btn btn-light">
+        <input type="radio" name="options" value="small"> Small
+      </label>
+    </div>
+    <div class="custom-control custom-switch ml-3">
+      <input type="checkbox" class="custom-control-input" id="pills">
+      <label class="custom-control-label" for="pills">Pills</label>
+    </div>
+  </div>
+  <div class="card-body">
+    <div id="content">
+      <hr>
+      <h6>Basic</h6>
+      <nav class="nav nav-gap-x-1">
+        <a class="nav-link active" href="javascript:void(0)">Active</a>
+        <a class="nav-link" href="javascript:void(0)">Link</a>
+        <a class="nav-link has-img" href="javascript:void(0)">
+          <img src="../img/gallery/1s.jpeg" alt="img" class="rounded-circle mr-2"> Has image
+        </a>
+        <span class="nav-link-divider mx-1"></span>
+        <a class="nav-link hover" href="javascript:void(0)">Hover</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </nav>
+      <hr>
+      <h6>With an icon</h6>
+      <nav class="nav nav-gap-x-1">
+        <a class="nav-link has-icon active" href="javascript:void(0)"><i class="material-icons mr-1">done</i>Active</a>
+        <a class="nav-link has-icon" href="javascript:void(0)"><i class="material-icons mr-1">label</i>Link</a>
+        <a class="nav-link has-icon" href="javascript:void(0)"><i class="material-icons mr-1">label</i>Link</a>
+        <a class="nav-link has-icon disabled" href="#" tabindex="-1" aria-disabled="true"><i class="material-icons mr-1">not_interested</i>Disabled</a>
+      </nav>
+      <hr>
+      <h6>Circle style</h6>
+      <nav class="nav nav-gap-x-1 nav-circle">
+        <a class="nav-link nav-icon active" href="javascript:void(0)"><i class="material-icons">dashboard</i></a>
+        <a class="nav-link nav-icon" href="javascript:void(0)"><i class="material-icons">person</i></a>
+        <a class="nav-link nav-icon" href="javascript:void(0)"><i class="material-icons">phone</i></a>
+        <a class="nav-link nav-icon disabled" href="#" tabindex="-1" aria-disabled="true"><i class="material-icons">not_interested</i></a>
+      </nav>
+      <hr>
+      <h6>Vertical</h6>
+      <nav class="nav nav-gap-y-1 flex-column" style="max-width: 250px">
+        <a class="nav-link has-icon active" href="javascript:void(0)"><i class="material-icons mr-1">done</i>Active</a>
+        <a class="nav-link has-icon" href="javascript:void(0)"><i class="material-icons mr-1">label</i>Link</a>
+        <a class="nav-link has-icon" href="javascript:void(0)"><i class="material-icons mr-1">label</i>Link</a>
+        <a class="nav-link has-icon disabled" href="#" tabindex="-1" aria-disabled="true"><i class="material-icons mr-1">not_interested</i>Disabled</a>
+      </nav>
+      <hr>
+      <h6>Tabs</h6>
+      <nav class="nav nav-tabs nav-gap-x-1">
+        <a class="nav-item nav-link has-icon active" href="#home_i" data-toggle="tab"><i class="material-icons mr-1">dashboard</i>Home</a>
+        <a class="nav-item nav-link has-icon" href="#profile_i" data-toggle="tab"><i class="material-icons mr-1">person</i>Profile</a>
+        <a class="nav-item nav-link has-icon" href="#contact_i" data-toggle="tab"><i class="material-icons mr-1">phone</i>Contact</a>
+        <a class="nav-item nav-link has-icon disabled" href="#" tabindex="-1" aria-disabled="true"><i class="material-icons mr-1">not_interested</i>Disabled</a>
+      </nav>
+      <div class="tab-content bg-light">
+        <div class="tab-pane show active" id="home_i">home content</div>
+        <div class="tab-pane" id="profile_i">profile content</div>
+        <div class="tab-pane" id="contact_i">contact content</div>
+      </div>
+      <hr>
+      <h6>Vertical tabs</h6>
+      <div class="row no-gutters">
+        <div class="col-6 col-sm-4">
+          <nav class="nav nav-gap-y-1 flex-column">
+            <a class="nav-item nav-link has-icon active" href="#home3_i" data-toggle="tab"><i class="material-icons mr-1">dashboard</i>Home</a>
+            <a class="nav-item nav-link has-icon" href="#profile3_i" data-toggle="tab"><i class="material-icons mr-1">person</i>Profile</a>
+            <a class="nav-item nav-link has-icon" href="#contact3_i" data-toggle="tab"><i class="material-icons mr-1">phone</i>Contact</a>
+            <a class="nav-item nav-link has-icon disabled" href="#" tabindex="-1" aria-disabled="true"><i class="material-icons mr-1">not_interested</i>Disabled</a>
+          </nav>
+        </div>
+        <div class="col-6 col-sm-8 bg-light">
+          <div class="tab-content">
+            <div class="tab-pane show active" id="home3_i">home content</div>
+            <div class="tab-pane" id="profile3_i">profile content</div>
+            <div class="tab-pane" id="contact3_i">contact content</div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h6>Sidebar nav with sub</h6>
+      <ul class="nav nav-sub nav-accordion border border-primary" id="exampleMenu" style="max-width: 250px">
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="javascript:void(0)"><i class="material-icons">dashboard</i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon dropdown-toggle" href="#"><i class="material-icons">shopping_cart</i>Shop</a>
+          <ul>
+            <li><a href="javascript:void(0)">Clothing</a></li>
+            <li><a href="javascript:void(0)">Shoes</a></li>
+            <li><a href="javascript:void(0)">Watches</a></li>
+            <li><a href="javascript:void(0)">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon dropdown-toggle" href="#"><i class="material-icons">person</i>Account</a>
+          <ul>
+            <li><a href="javascript:void(0)">Profile</a></li>
+            <li><a href="javascript:void(0)">Address</a></li>
+            <li><a href="javascript:void(0)">Settings</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="javascript:void(0)"><i class="material-icons">rss_feed</i>Blog</a>
+        </li>
+      </ul>
+      <hr>
+      <h6>Sidebar nav no toggle</h6>
+      <ul class="nav nav-sub border border-primary" id="exampleMenu2" style="max-width: 250px">
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="javascript:void(0)"><i class="material-icons">dashboard</i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon dropdown-toggle" href="#"><i class="material-icons">shopping_cart</i>Shop</a>
+          <ul>
+            <li><a href="javascript:void(0)">Clothing</a></li>
+            <li><a href="javascript:void(0)">Shoes</a></li>
+            <li><a href="javascript:void(0)">Watches</a></li>
+            <li><a href="javascript:void(0)">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon dropdown-toggle" href="#"><i class="material-icons">person</i>Account</a>
+          <ul>
+            <li><a href="javascript:void(0)">Profile</a></li>
+            <li><a href="javascript:void(0)">Address</a></li>
+            <li><a href="javascript:void(0)">Settings</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link has-icon" href="javascript:void(0)"><i class="material-icons">rss_feed</i>Blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(null, script).then(() => {
+
+    // toggle navigation small
+    for (const el of document.querySelectorAll('[name="options"]')) {
+      el.parentNode.addEventListener('click', function () {
+        for (const el of document.querySelectorAll('#content .nav-link')) {
+          if (this.querySelector('input').value == 'small') {
+            el.classList.add('nav-link-sm')
+          } else {
+            el.classList.remove('nav-link-sm')
+          }
+        }
+      })
+    }
+
+    // toggle pills
+    document.querySelector('#pills').addEventListener('change', function () {
+      if (this.checked) {
+        for (const el of document.querySelectorAll('#content .nav:not(.nav-circle)')) {
+          el.classList.add('nav-pills')
+        }
+        document.querySelector('#content .nav-tabs').classList.add('nav-tabs_')
+        document.querySelector('#content .nav-tabs').classList.remove('nav-tabs')
+      } else {
+        for (const el of document.querySelectorAll('#content .nav:not(.nav-circle)')) {
+          el.classList.remove('nav-pills')
+        }
+        document.querySelector('#content .nav-tabs_').classList.add('nav-tabs')
+        document.querySelector('#content .nav-tabs_').classList.remove('nav-tabs_')
+      }
+    })
+
+    App.navSub('#exampleMenu')
+    App.navSub('#exampleMenu2', false)
+
+  }).then(() => App.stopLoading())
+</script>

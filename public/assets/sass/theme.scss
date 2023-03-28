@@ -1,0 +1,55 @@
+html:not([theme="dark"]) {
+    --border-color: #{$border-color};
+    --border-color-dark: #{$border-color-dark}
+}
+
+html[theme="dark"] {
+    --text-color: #fff;
+    --text-color-meta: #AAAAAA;
+    --text-color-meta-dark: #717171;
+    --text-color-darker: #222;
+    --text-color-darkest: #000;
+    --text-color-hover: #999999;
+    --text-color-mute: #9a9a9a;
+    --text-color-light: hsla(0, 0%, 87%, 0.8);
+    --text-color-lighter: hsla(0, 0%, 73%, 0.8);
+    --link-color: #ebebeb;
+    --link-hover-color: #fff;
+    --error-color: rgb(240, 50, 50);
+    --background: #262626;
+    --background-secondery: #1c1c1c;
+    --background--darker: #121212;
+    --background--darkest: #040404;
+    --background--lighter: #3e3e3e;
+    --nav-bg: #262626;
+    --nav-border: #424242;
+    --panel-bg: #1c1c1c;
+    --border-color-light: #ddd;
+    --logo-color: #ffffff;
+    --logo-color-dark: #000000;
+    --panel-header-bg: #1d1d1d;
+    --panel-box-bg: #1c1c1c;
+    --border-color: rgba(255,255,255,0.1);
+    --border-color-20: rgba(255,255,255,0.2);
+    --border-color-30: rgba(255,255,255,0.3);
+    --content-box-shadow: 0 1px 1px rgba(180, 180, 180, 0.1);
+    --border-color-dark: rgba(255,255,255,0.2);
+    --menu-link-color: var(--text-color-light);
+    --menu-hover-bg: var(--background--lighter);
+    --search-input-bg:#ff;
+    --footer-bg: var(--background);
+    --input-bg: var(--background--darker);
+    --input-color: var(--text-color);
+    --input-border-color: var(--border-color);
+    --category-sidebar-bg: var(--background-secondery);
+    --sidebar-title-color: var(--text-color-light);
+    --category-list-color: var(--text-color-mute);
+    --category-list-item-hover:var(--background--lighter);
+    --tab-box-bg: var(--background--lighter);
+    --tab-box-active-bg: var(--background-secondery);
+    --tab-box-active-border: var(--border-color);
+    --brand-success: #{$brand-success-dark};
+    --brand-info: #{$brand-info-dark};
+    --brand-warning: #{$brand-warning-dark};
+    --brand-primary: #{$brand-primary-dark};
+}

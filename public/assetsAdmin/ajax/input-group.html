@@ -1,0 +1,257 @@
+<div class="row">
+  <div class="col">
+
+    <section id="section1">
+      <h5>Basic Example</h5>
+      <p class="text-muted font-size-sm">
+        Place one add-on or button on either side of an input. You may also place one on both sides of an input.
+      </p>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="list-with-gap">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control text-right" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+              </div>
+              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">With textarea</span>
+              </div>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect">With custom select</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupFileAddon">With custom file input</span>
+              </div>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon" multiple>
+                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section2">
+      <h5>Checkboxes and Radios</h5>
+      <p class="text-muted font-size-sm">
+        Place any checkbox or radio option within an input group’s addon instead of text.
+      </p>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="list-with-gap">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="custom-control custom-control-nolabel custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck">
+                    <label class="custom-control-label" for="customCheck"></label>
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control" aria-label="Text input with checkbox">
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="custom-control custom-control-nolabel custom-radio">
+                    <input type="radio" name="customRadio" class="custom-control-input" id="customRadio">
+                    <label class="custom-control-label" for="customRadio"></label>
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="custom-control custom-control-nolabel custom-radio">
+                    <input type="radio" name="customRadio" class="custom-control-input" id="customRadio2">
+                    <label class="custom-control-label" for="customRadio2"></label>
+                  </div>
+                </div>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section3">
+      <h5>Multiple Inputs</h5>
+      <p class="text-muted font-size-sm">
+        While multiple inputs are supported visually, validation styles are only available for input groups with a single input.
+      </p>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Fullname</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Firstname">
+        <input type="text" class="form-control" placeholder="Lastname">
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section4">
+      <h5>Multiple Addons</h5>
+      <p class="text-muted font-size-sm">
+        Multiple add-ons are supported and can be mixed with checkbox and radio input versions.
+      </p>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="list-with-gap">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+                <span class="input-group-text">0.00</span>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control">
+              <div class="input-group-append">
+                <span class="input-group-text">$</span>
+                <span class="input-group-text">0.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section5">
+      <h5>Button Addons</h5>
+      <p class="text-muted font-size-sm">
+        Place any buttons within an input group’s addon.
+      </p>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="list-with-gap">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button class="btn btn-light" type="button">Button</button>
+              </div>
+              <input type="text" class="form-control">
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Recipient's username">
+              <div class="input-group-append">
+                <button class="btn btn-light" type="button">Button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section6">
+      <h5>Dropdown Addons</h5>
+      <p class="text-muted font-size-sm">
+        Place any dropdown within an input group’s addon.
+      </p>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="list-with-gap">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+                </div>
+              </div>
+              <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control" aria-label="Text input with dropdown button">
+              <div class="input-group-append">
+                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                  <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="javascript:void(0)">Separated link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+  </div>
+
+  <div class="col-3 d-none d-xl-block">
+    <div class="nav-section">
+      <label class="text-muted">On This Page</label>
+      <nav id="navSection" class="nav flex-column">
+        <a href="#section1" class="nav-link nav-link-sm">Basic Example</a>
+        <a href="#section2" class="nav-link nav-link-sm">Checkboxes and Radios</a>
+        <a href="#section3" class="nav-link nav-link-sm">Multiple Inputs</a>
+        <a href="#section4" class="nav-link nav-link-sm">Multiple Addons</a>
+        <a href="#section5" class="nav-link nav-link-sm">Button Addons</a>
+        <a href="#section6" class="nav-link nav-link-sm">Dropdown Addons</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script>
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(null, script).then(() => {
+
+    // your script here
+
+  }).then(() => App.stopLoading())
+</script>

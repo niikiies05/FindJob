@@ -1,0 +1,199 @@
+<h5>Sparkline</h5>
+<p class="text-muted font-size-sm">
+  Generates sparklines (small inline charts) directly in the browser using data supplied either inline in the HTML, or via javascript.
+</p>
+
+<div class="row row-cols-sm-2 row-cols-xl-4 gutters-sm">
+
+  <!-- LINE CHARTS -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header text-center">Line charts</div>
+      <div class="card-body text-center">
+        <div class="d-inline-block border p-1 mb-1"><span id="line1">1,4,4,7,5,9,8,5,4,4,7,5,9,10</span></div>
+        <div class="d-inline-block border p-1 mb-1"><span id="line2">1,4,4,7,5,9,8,5,4,4,7,5,9,10</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- /LINE CHARTS -->
+
+  <!-- AREA CHARTS -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header text-center">Area charts</div>
+      <div class="card-body text-center">
+        <div class="d-inline-block border p-1 mb-1"><span id="area1">1,4,4,7,5,9,8,5,4,4,7,5,9,10</span></div>
+        <div class="d-inline-block border p-1 mb-1"><span id="area2">1,4,4,7,5,9,8,5,4,4,7,5,9,10</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- /AREA CHARTS -->
+
+  <!-- BAR CHARTS -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header text-center">Bar charts</div>
+      <div class="card-body text-center">
+        <div class="d-inline-block border p-1 mb-1"><span id="bar1">3,4,5,7,5,9,8,5,4,4,7,5,9,10</span></div>
+        <div class="d-inline-block border p-1 mb-1"><span id="bar2">3,4,5,7,5,9,8,5,4,4,7,5,9,10</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- /BAR CHARTS -->
+
+  <!-- STACKED BAR CHARTS -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header text-center">Stacked bar charts</div>
+      <div class="card-body text-center">
+        <div class="d-inline-block border p-1 mb-1"><span id="stackedBar1">7,8,10,7,5,9,10,6,9,4,7,5,9,10,8</span></div>
+        <div class="d-inline-block border p-1 mb-1"><span id="stackedBar2">3,4,4,7,5,9,10,6,4,4,7,5,9,10,8</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- /STACKED BAR CHARTS -->
+
+</div>
+
+<div class="row row-cols-sm-2 gutters-sm">
+
+  <!-- PIE CHARTS -->
+  <div class="col-lg-4 col-xl-3 mb-3">
+    <div class="card card-style-1">
+      <div class="card-header text-center">Pie charts</div>
+      <div class="card-body text-center">
+        <div class="d-inline-block border p-1 mb-1"><span id="pie1">7,8,6,5</span></div>
+        <div class="d-inline-block border p-1 mb-1"><span id="pie2">3,4,4,7,5,9,10,6</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- /PIE CHARTS -->
+
+  <!-- INLINE -->
+  <div class="col-lg-8 col-xl-9 mb-3">
+    <div class="card card-style-1">
+      <div class="card-header text-center">Inline</div>
+      <div class="card-body">
+        Lorem ipsum dolor. <span id="inline1">1,5,2,7,3,8,2,6,2,2,2</span> consectetur adipisicing elit <span id="inline2">1,6,2,7,3,8,2,4,1,6</span>
+        vero similique eligendi aliquid <span id="inline3">2,8,2,4,3,7,1,6</span>
+      </div>
+    </div>
+  </div>
+  <!-- /INLINE -->
+
+</div>
+
+<script>
+  var plugins = [
+    '../../plugins/jquery-sparkline/jquery.sparkline.min.js'
+  ]
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(plugins, script).then(() => {
+
+    /***************** LINE CHARTS *****************/
+    $('#line1').sparkline('html', {
+      width: '125',
+      height: 50,
+      lineColor: yellow,
+      fillColor: false
+    })
+    $('#line2').sparkline('html', {
+      width: '125',
+      height: 50,
+      lineColor: cyan,
+      fillColor: false
+    })
+
+    /***************** AREA CHARTS *****************/
+    $('#area1').sparkline('html', {
+      width: '125',
+      height: 50,
+      lineColor: yellow,
+      fillColor: '#ffeab8'
+    })
+    $('#area2').sparkline('html', {
+      width: '125',
+      height: 50,
+      lineColor: cyan,
+      fillColor: '#bee5eb'
+    })
+
+    /***************** BAR CHARTS *****************/
+    $('#bar1').sparkline('html', {
+      type: 'bar',
+      barWidth: 8,
+      height: 50,
+      barColor: yellow
+    })
+    $('#bar2').sparkline('html', {
+      type: 'bar',
+      barWidth: 8,
+      height: 50,
+      barColor: cyan
+    })
+
+    /***************** STACKED BAR CHARTS *****************/
+    $('#stackedBar1').sparkline('html', {
+      type: 'bar',
+      barWidth: 8,
+      height: 50,
+      barColor: '#ffeab8'
+    })
+    $('#stackedBar1').sparkline([4,5,6,7,4,5,8,7,6,6,4,7,6,4,7], {
+      composite: true,
+      type: 'bar',
+      barWidth: 8,
+      height: 50,
+      barColor: yellow
+    })
+    $('#stackedBar2').sparkline('html', {
+      type: 'bar',
+      barWidth: 8,
+      height: 50,
+      barColor: '#bee5eb'
+    })
+    $('#stackedBar2').sparkline([4,5,6,7,4,5,8,7,6,6,4,7,6,4,7], {
+      composite: true,
+      type: 'bar',
+      barWidth: 8,
+      height: 50,
+      barColor: cyan
+    })
+
+    /***************** PIE CHARTS *****************/
+    $('#pie1').sparkline('html', {
+      type: 'pie',
+      height: 70,
+      sliceColors: [blue, green, red, yellow]
+    })
+
+    $('#pie2').sparkline('html', {
+      type: 'pie',
+      height: 70,
+      sliceColors: [blue, green, red, yellow, purple, orange, lime, pink]
+    })
+
+    /***************** INLINE CHARTS *****************/
+    $('#inline1').sparkline('html', {
+      width: '50',
+      height: 15,
+      lineColor: yellow,
+      fillColor: false
+    })
+    $('#inline2').sparkline('html', {
+      width: '75',
+      height: 15,
+      lineColor: cyan,
+      fillColor: '#bee5eb'
+    })
+    $('#inline3').sparkline('html', {
+      type: 'bar',
+      barWidth: 8,
+      height: 15,
+      barColor: red
+    })
+
+  }).then(() => App.stopLoading())
+</script>

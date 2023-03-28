@@ -1,0 +1,256 @@
+<h5>Line Chart</h5>
+<p class="text-muted font-size-sm">
+  A line chart is a way of plotting data points on a line. Often, it is used to show trend data, or the comparison of two data sets.
+</p>
+
+<div class="row row-cols-md-2 gutters-sm">
+
+  <!-- BASIC -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header">
+        Basic
+        <button type="button" data-action="fullscreen" class="btn btn-sm btn-text-secondary btn-icon rounded-circle shadow-none ml-auto">
+          <i class="material-icons">fullscreen</i>
+        </button>
+      </div>
+      <div class="card-body" style="height: 300px">
+        <canvas id="line-chart-basic"></canvas>
+      </div>
+    </div>
+  </div>
+  <!-- /BASIC -->
+
+  <!-- STRAIGHTLINES -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header">
+        Straight Lines
+        <button type="button" data-action="fullscreen" class="btn btn-sm btn-text-secondary btn-icon rounded-circle shadow-none ml-auto">
+          <i class="material-icons">fullscreen</i>
+        </button>
+      </div>
+      <div class="card-body" style="height: 300px">
+        <canvas id="line-chart-straightlines"></canvas>
+      </div>
+    </div>
+  </div>
+  <!-- /STRAIGHTLINES -->
+
+  <!-- MULTI AXIS -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header">
+        Multi Axis
+        <button type="button" data-action="fullscreen" class="btn btn-sm btn-text-secondary btn-icon rounded-circle shadow-none ml-auto">
+          <i class="material-icons">fullscreen</i>
+        </button>
+      </div>
+      <div class="card-body" style="height: 300px">
+        <canvas id="line-chart-multi"></canvas>
+      </div>
+    </div>
+  </div>
+  <!-- /MULTI AXIS -->
+
+  <!-- FILL AREA -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header">
+        Fill Area
+        <button type="button" data-action="fullscreen" class="btn btn-sm btn-text-secondary btn-icon rounded-circle shadow-none ml-auto">
+          <i class="material-icons">fullscreen</i>
+        </button>
+      </div>
+      <div class="card-body" style="height: 300px">
+        <canvas id="line-chart-fill"></canvas>
+      </div>
+    </div>
+  </div>
+  <!-- /FILL AREA -->
+
+  <!-- DASH LINES -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header">
+        Dash Lines
+        <button type="button" data-action="fullscreen" class="btn btn-sm btn-text-secondary btn-icon rounded-circle shadow-none ml-auto">
+          <i class="material-icons">fullscreen</i>
+        </button>
+      </div>
+      <div class="card-body" style="height: 300px">
+        <canvas id="line-chart-dash"></canvas>
+      </div>
+    </div>
+  </div>
+  <!-- /DASH LINES -->
+
+  <!-- POINT STYLES -->
+  <div class="col mb-3">
+    <div class="card card-style-1">
+      <div class="card-header">
+        Point Style:
+        <select class="custom-select custom-select-sm w-auto ml-3" id="pointStyle">
+          <option value="circle">circle</option>
+          <option value="cross">cross</option>
+          <option value="crossRot">crossRot</option>
+          <option value="dash">dash</option>
+          <option value="line">line</option>
+          <option value="rect">rect</option>
+          <option value="rectRounded">rectRounded</option>
+          <option value="rectRot">rectRot</option>
+          <option value="star">star</option>
+          <option value="triangle">triangle</option>
+        </select>
+        <button type="button" data-action="fullscreen" class="btn btn-sm btn-text-secondary btn-icon rounded-circle shadow-none ml-auto">
+          <i class="material-icons">fullscreen</i>
+        </button>
+      </div>
+      <div class="card-body" style="height: 300px">
+        <canvas id="line-chart-point-style"></canvas>
+      </div>
+    </div>
+  </div>
+  <!-- /POINT STYLES -->
+
+</div>
+
+<script>
+  var plugins = [
+    '../../plugins/chart.js/Chart.min.js'
+  ]
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(plugins, script).then(() => {
+
+    // Data example
+    monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July']
+    data1 = [33, 79, 85, 54, 64, 97, 79]
+    data2 = [84, 100, 64, 18, 16, 94, 73]
+
+    // Global configuration
+    Chart.defaults.global.elements.line.borderWidth = 1
+    Chart.defaults.global.elements.line.fill = false
+    Chart.defaults.global.maintainAspectRatio = false // disable the maintain aspect ratio in options then it uses the available height
+
+    /***************** BASIC *****************/
+    new Chart('line-chart-basic', {
+      type: 'line',
+      data: {
+        labels: monthNames,
+        datasets: [{
+          label: 'My dataset',
+          backgroundColor: Chart.helpers.color(blue).alpha(0.5).rgbString(),
+          borderColor: blue,
+          data: data1
+        }]
+      }
+    })
+
+    /***************** STRAIGHT LINES *****************/
+    new Chart('line-chart-straightlines', {
+      type: 'line',
+      data: {
+        labels: monthNames,
+        datasets: [{
+          label: 'My dataset',
+          backgroundColor: Chart.helpers.color(green).alpha(0.5).rgbString(),
+          borderColor: green,
+          tension: 0,
+          data: data1
+        }]
+      }
+    })
+
+    /***************** MULTI AXIS *****************/
+    new Chart('line-chart-multi', {
+      type: 'line',
+      data: {
+        labels: monthNames,
+        datasets: [
+          {
+            label: '2018',
+            backgroundColor: Chart.helpers.color(cyan).alpha(0.5).rgbString(),
+            borderColor: cyan,
+            data: data1
+          },
+          {
+            label: '2019',
+            backgroundColor: Chart.helpers.color(yellow).alpha(0.5).rgbString(),
+            borderColor: yellow,
+            data: data2
+          }
+        ]
+      },
+      options: {
+        tooltips: {
+          mode: 'index',
+          intersect: false
+          // Interactions configuration: https://www.chartjs.org/docs/latest/general/interactions/
+        }
+      }
+    })
+
+    /***************** FILL AREA *****************/
+    new Chart('line-chart-fill', {
+      type: 'line',
+      data: {
+        labels: monthNames,
+        datasets: [{
+          label: 'My dataset',
+          backgroundColor: Chart.helpers.color(lime).alpha(0.5).rgbString(),
+          borderColor: lime,
+          tension: 0,
+          fill: true,
+          data: data1
+        }]
+      }
+    })
+
+    /***************** DASH LINES *****************/
+    new Chart('line-chart-dash', {
+      type: 'line',
+      data: {
+        labels: monthNames,
+        datasets: [{
+          label: 'My dataset',
+          backgroundColor: Chart.helpers.color(purple).alpha(0.5).rgbString(),
+          borderColor: purple,
+          borderDash: [5, 5],
+          data: data1
+        }]
+      }
+    })
+
+    /***************** POINT STYLE *****************/
+    chartPointStyle = new Chart('line-chart-point-style', {
+      type: 'line',
+      data: {
+        labels: monthNames,
+        datasets: [{
+          label: 'My dataset',
+          backgroundColor: Chart.helpers.color(pink).alpha(0.5).rgbString(),
+          borderColor: pink,
+          pointRadius: 10, // size
+          pointHoverRadius: 15, // on hover size
+          data: data1
+        }]
+      },
+      options: {
+        elements: {
+          point: {
+            pointStyle: 'circle' // circle | cross | crossRot | dash | line | rect | rectRounded | rectRot | star | triangle
+          }
+        }
+      }
+    })
+
+    // Change point style
+    document.querySelector('#pointStyle').addEventListener('change', function () {
+      chartPointStyle.options.elements.point.pointStyle = this.value
+      chartPointStyle.update()
+    })
+
+  }).then(() => App.stopLoading())
+</script>

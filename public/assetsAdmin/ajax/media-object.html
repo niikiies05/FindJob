@@ -1,0 +1,175 @@
+<div class="row">
+  <div class="col">
+
+    <section id="section1">
+      <h5>Basic Example</h5>
+      <p class="text-muted font-size-sm">
+        Helps build complex and repetitive components where some media is positioned alongside content that doesn’t wrap around said media. Plus, it does this with only two required classes thanks to flexbox.
+      </p>
+      <div class="card card-style-1">
+        <div class="card-body">
+          <div class="media">
+            <img src="../img/user1.svg" class="mr-3 rounded-circle" width="100" alt="">
+            <div class="media-body">
+              <h5 class="text-secondary">Media heading</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section2">
+      <h5>Nesting</h5>
+      <p class="text-muted font-size-sm">
+        Media objects can be infinitely nested, though we suggest you stop at some point. Place nested <code>.media</code> within the <code>.media-body</code> of a parent media object.
+      </p>
+      <div class="card card-style-1">
+        <div class="card-body">
+          <div class="media">
+            <img src="../img/user2.svg" class="mr-3 rounded-circle" width="100" alt="">
+            <div class="media-body">
+              <h5 class="text-secondary">Media heading</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              <div class="media mt-3">
+                <img src="../img/user3.svg" class="mr-3 rounded-circle" width="100" alt="">
+                <div class="media-body">
+                  <h5 class="text-secondary">Media heading</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section3">
+      <h5>Alignment</h5>
+      <p class="text-muted font-size-sm">
+        Media in a media object can be aligned with flexbox utilities to the top (default), middle, or end of your <code>.media-body</code> content.
+      </p>
+      <div class="card card-style-1">
+        <div class="card-body">
+          <div class="media">
+            <img src="../img/user4.svg" class="align-self-start mr-3 rounded-circle" width="100" alt="">
+            <div class="media-body">
+              <h5 class="text-secondary">Top-aligned media</h5>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+              <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-style-1 mt-1">
+        <div class="card-body">
+          <div class="media">
+            <img src="../img/user5.svg" class="align-self-center mr-3 rounded-circle" width="100" alt="">
+            <div class="media-body">
+              <h5 class="text-secondary">Center-aligned media</h5>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+              <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-style-1 mt-1">
+        <div class="card-body">
+          <div class="media">
+            <img src="../img/user1.svg" class="align-self-end mr-3 rounded-circle" width="100" alt="">
+            <div class="media-body">
+              <h5 class="text-secondary">Bottom-aligned media</h5>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+              <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section4">
+      <h5>Order</h5>
+      <p class="text-muted font-size-sm">
+        Change the order of content in media objects by modifying the HTML itself, or by adding some custom flexbox CSS to set the order property (to an integer of your choosing).
+      </p>
+      <div class="card card-style-1">
+        <div class="card-body">
+          <div class="media">
+            <div class="media-body">
+              <h5 class="text-secondary">Media heading</h5>
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+            </div>
+            <img src="../img/user2.svg" class="mr-3 rounded-circle" width="100" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section5">
+      <h5>Media List</h5>
+      <p class="text-muted font-size-sm">
+        Because the media object has so few structural requirements, you can also use these classes on list HTML elements.
+      </p>
+      <div class="card card-style-1">
+        <div class="card-body">
+          <ul class="list-unstyled">
+            <li class="media">
+              <img src="../img/user3.svg" class="mr-3 rounded-circle" width="100" alt="">
+              <div class="media-body">
+                <h5 class="text-secondary">Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </li>
+            <li class="media mt-3">
+              <img src="../img/user4.svg" class="mr-3 rounded-circle" width="100" alt="">
+              <div class="media-body">
+                <h5 class="text-secondary">Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </li>
+            <li class="media mt-3">
+              <img src="../img/user5.svg" class="mr-3 rounded-circle" width="100" alt="">
+              <div class="media-body">
+                <h5 class="text-secondary">Media heading</h5>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="col-3 d-none d-xl-block">
+    <div class="nav-section">
+      <label class="text-muted">On This Page</label>
+      <nav id="navSection" class="nav flex-column">
+        <a href="#section1" class="nav-link nav-link-sm">Basic Example</a>
+        <a href="#section2" class="nav-link nav-link-sm">Nesting</a>
+        <a href="#section3" class="nav-link nav-link-sm">Alignment</a>
+        <a href="#section4" class="nav-link nav-link-sm">Order</a>
+        <a href="#section5" class="nav-link nav-link-sm">Media List</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script>
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(null, script).then(() => {
+
+    // your script here
+
+  }).then(() => App.stopLoading())
+</script>

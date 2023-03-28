@@ -1,0 +1,228 @@
+<style>
+  .slider-example {
+    max-width: 300px;
+  }
+</style>
+<div class="row">
+  <div class="col">
+
+    <section id="section1">
+      <h5>Basic example</h5>
+      <p class="text-muted font-size-sm mb-5">
+        Set min value, max value and start point.
+      </p>
+      <div id="slider1" class="slider-example"></div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section2">
+      <h5>Range</h5>
+      <p class="text-muted font-size-sm mb-5">
+        Set min value, max value, start point and end point.
+      </p>
+      <div id="slider2" class="slider-example"></div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section3">
+      <h5>Connect</h5>
+      <p class="text-muted font-size-sm mb-5">
+        The connect option can be used to control the bar between the handles or the edges of the slider.
+      </p>
+      <div id="slider3" class="slider-example"></div>
+      <div id="slider4" class="slider-example mt-5"></div>
+      <div id="slider5" class="slider-example mt-5"></div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section4">
+      <h5>Step</h5>
+      <p class="text-muted font-size-sm mb-5">
+        By default, the slider slides fluently. In order to make the handles jump between intervals, you can use the step option.
+      </p>
+      <div id="slider6" class="slider-example"></div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section5">
+      <h5>Orientation</h5>
+      <p class="text-muted font-size-sm mb-5">
+        The orientation setting can be used to set the slider to "vertical" or "horizontal".
+      </p>
+      <div class="pl-5">
+        <div id="slider7" style="height: 200px"></div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section6">
+      <h5>Direction</h5>
+      <p class="text-muted font-size-sm mb-5">
+        By default the sliders are top-to-bottom and left-to-right, but you can change this using the direction option, which decides where the upper side of the slider is.
+      </p>
+      <div id="slider8" class="slider-example"></div>
+      <div class="pl-5 mt-3">
+        <div id="slider9" style="height: 200px"></div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section7">
+      <h5>Tooltips</h5>
+      <p class="text-muted font-size-sm">
+        Disable tooltip using the <code>tooltips</code> option.
+      </p>
+      <div id="slider10" class="slider-example"></div>
+    </section>
+
+    <hr class="my-5">
+
+  </div>
+
+  <div class="col-3 d-none d-xl-block">
+    <div class="nav-section">
+      <label class="text-muted">On This Page</label>
+      <nav id="navSection" class="nav flex-column">
+        <a href="#section1" class="nav-link nav-link-sm">Basic example</a>
+        <a href="#section2" class="nav-link nav-link-sm">Range</a>
+        <a href="#section3" class="nav-link nav-link-sm">Connect</a>
+        <a href="#section4" class="nav-link nav-link-sm">Step</a>
+        <a href="#section5" class="nav-link nav-link-sm">Orientation</a>
+        <a href="#section6" class="nav-link nav-link-sm">Direction</a>
+        <a href="#section7" class="nav-link nav-link-sm">Tooltips</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script>
+  var plugins = [
+    '../../plugins/nouislider/nouislider.min.css',
+    '../../plugins/nouislider/nouislider.min.js'
+  ]
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(plugins, script).then(() => {
+
+    // Basic example
+    noUiSlider.create(document.getElementById('slider1'), {
+      start: 50,
+      range: {
+        min: 0,
+        max: 100
+      },
+      tooltips: true
+    })
+
+    // Range
+    noUiSlider.create(document.getElementById('slider2'), {
+      start: [25, 75],
+      range: {
+        min: 0,
+        max: 100
+      },
+      tooltips: true
+    })
+
+    // Connect 'lower'
+    noUiSlider.create(document.getElementById('slider3'), {
+      connect: 'lower',
+      start: 25,
+      range: {
+        min: 0,
+        max: 100
+      },
+      tooltips: true
+    })
+
+    // Connect 'upper'
+    noUiSlider.create(document.getElementById('slider4'), {
+      connect: 'upper',
+      start: 75,
+      range: {
+        min: 0,
+        max: 100
+      },
+      tooltips: true
+    })
+
+    // Connect 'true' sets the bars between the handles, but not between the handles and the sliders edges
+    noUiSlider.create(document.getElementById('slider5'), {
+      connect: true,
+      start: [25, 75],
+      range: {
+        min: 0,
+        max: 100
+      },
+      tooltips: true
+    })
+
+    // Step
+    noUiSlider.create(document.getElementById('slider6'), {
+      connect: 'lower',
+      step: 5,
+      start: 25,
+      range: {
+        min: 0,
+        max: 100
+      },
+      tooltips: true
+    })
+
+    // Orientation
+    noUiSlider.create(document.getElementById('slider7'), {
+      orientation: 'vertical',
+      connect: 'lower',
+      start: 25,
+      range: {
+        min: 0,
+        max: 100
+      },
+      tooltips: true
+    })
+
+    // Direction
+    noUiSlider.create(document.getElementById('slider8'), {
+      direction: 'rtl',
+      connect: 'lower',
+      start: 25,
+      range: {
+        min: 0,
+        max: 100
+      },
+      tooltips: true
+    })
+
+    // Direction
+    noUiSlider.create(document.getElementById('slider9'), {
+      direction: 'rtl',
+      orientation: 'vertical',
+      connect: 'lower',
+      start: 25,
+      range: {
+        min: 0,
+        max: 100
+      },
+      tooltips: true
+    })
+
+    // Disable tooltip
+    noUiSlider.create(document.getElementById('slider10'), {
+      connect: 'lower',
+      start: 25,
+      range: {
+        min: 0,
+        max: 100
+      },
+      tooltips: false
+    })
+
+  }).then(() => App.stopLoading())
+</script>

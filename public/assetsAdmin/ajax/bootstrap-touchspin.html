@@ -1,0 +1,97 @@
+<div class="row">
+  <div class="col">
+
+    <section id="section1">
+      <h5>Basic usage</h5>
+      <p class="text-muted font-size-sm">
+        A mobile and touch friendly input spinner component for Bootstrap. It supports the mousewheel and the up/down keys.
+      </p>
+      <input type="text" value="1" class="bs-touchspin text-center" style="max-width: 70px">
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section2">
+      <h5>Sizes</h5>
+      <p class="text-muted font-size-sm">
+        Wrap with <code>.input-group-sm</code> for small size. And <code>.input-group-lg</code> for large size.
+      </p>
+      <div class="input-group input-group-sm" style="max-width: 200px">
+        <input type="text" value="10" class="bs-touchspin text-center">
+      </div>
+      <div class="input-group input-group-lg mt-1" style="max-width: 200px">
+        <input type="text" value="20" class="bs-touchspin text-center">
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section3">
+      <h5>Prefix and Postfix</h5>
+      <p class="text-muted font-size-sm">
+        Place one add-on on either side of an input or both.
+      </p>
+      <div class="input-group" style="max-width: 200px">
+        <input type="text" value="30" class="bs-touchspin" data-prefix="$">
+      </div>
+      <div class="input-group mt-1" style="max-width: 200px">
+        <input type="text" value="40" class="bs-touchspin text-right" data-postfix="%">
+      </div>
+      <div class="input-group mt-1" style="max-width: 250px">
+        <input type="text" value="10" class="bs-touchspin text-right" data-prefix="Tax :" data-postfix="%">
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section4">
+      <h5>Vertical buttons</h5>
+      <p class="text-muted font-size-sm">
+        Place the button vertically.
+      </p>
+      <div style="max-width: 100px">
+        <input type="text" value="50" class="bs-touchspin-vertical">
+      </div>
+      <div style="max-width: 200px" class=" mt-1">
+        <input type="text" value="10" class="bs-touchspin-vertical text-right" data-prefix="Tax :" data-postfix="%">
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+  </div>
+
+  <div class="col-3 d-none d-xl-block">
+    <div class="nav-section">
+      <label class="text-muted">On This Page</label>
+      <nav id="navSection" class="nav flex-column">
+        <a href="#section1" class="nav-link nav-link-sm">Basic usage</a>
+        <a href="#section2" class="nav-link nav-link-sm">Sizes</a>
+        <a href="#section3" class="nav-link nav-link-sm">Prefix and Postfix</a>
+        <a href="#section4" class="nav-link nav-link-sm">Vertical buttons</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script>
+  var plugins = [
+    '../../plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js',
+  ]
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(plugins, script).then(() => {
+
+    $('.bs-touchspin').TouchSpin({
+      buttonup_class: 'btn btn-light',
+      buttondown_class: 'btn btn-light',
+    })
+    $('.bs-touchspin-vertical').TouchSpin({
+      verticalbuttons: true,
+      buttonup_class: 'btn btn-light',
+      buttondown_class: 'btn btn-light',
+    })
+
+  }).then(() => App.stopLoading())
+</script>

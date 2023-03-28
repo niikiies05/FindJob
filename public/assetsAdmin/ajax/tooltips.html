@@ -1,0 +1,75 @@
+<section>
+  <h5>Four Directions</h5>
+  <p class="text-muted font-size-sm">Four options are available: top, right, bottom, and left aligned.</p>
+  <div class="d-flex justify-content-around">
+    <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+      Top
+    </button>
+    <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+      Right
+    </button>
+    <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+      Bottom
+    </button>
+    <button type="button" class="btn btn-light" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+      Left
+    </button>
+  </div>
+</section>
+
+<hr class="my-5">
+
+<section>
+  <h5>Contextual Variations</h5>
+  <p class="text-muted font-size-sm">A custom style variant to create a full colored background of popover. Available in all four directions.</p>
+  <div class="d-flex justify-content-around">
+    <button type="button" class="btn btn-primary" title="Primary Tooltip" data-toggle="tooltip-primary" data-placement="top">
+      Primary
+    </button>
+    <button type="button" class="btn btn-success" title="Success Tooltip" data-toggle="tooltip-success" data-placement="top">
+      Success
+    </button>
+    <button type="button" class="btn btn-warning" title="Warning Tooltip" data-toggle="tooltip-warning" data-placement="top">
+      Warning
+    </button>
+  </div>
+  <div class="d-flex justify-content-around mt-3">
+    <button type="button" class="btn btn-danger" title="Danger Tooltip" data-toggle="tooltip-danger" data-placement="bottom">
+      Danger
+    </button>
+    <button type="button" class="btn btn-info" title="Info Tooltip" data-toggle="tooltip-info" data-placement="bottom">
+      Info
+    </button>
+    <button type="button" class="btn btn-secondary" title="Secondary Tooltip" data-toggle="tooltip-secondary" data-placement="bottom">
+      Secondary
+    </button>
+  </div>
+</section>
+
+<script>
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(null, script).then(() => {
+
+    $('[data-toggle="tooltip-primary"]').tooltip({
+      template: '<div class="tooltip tooltip-primary" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+    })
+    $('[data-toggle="tooltip-success"]').tooltip({
+      template: '<div class="tooltip tooltip-success" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+    })
+    $('[data-toggle="tooltip-warning"]').tooltip({
+      template: '<div class="tooltip tooltip-warning" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+    })
+    $('[data-toggle="tooltip-danger"]').tooltip({
+      template: '<div class="tooltip tooltip-danger" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+    })
+    $('[data-toggle="tooltip-info"]').tooltip({
+      template: '<div class="tooltip tooltip-info" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+    })
+    $('[data-toggle="tooltip-secondary"]').tooltip({
+      template: '<div class="tooltip tooltip-secondary" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+    })
+
+  }).then(() => App.stopLoading())
+</script>

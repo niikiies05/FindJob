@@ -1,0 +1,67 @@
+<div class="card card-style-1">
+  <div class="card-body">
+    <section>
+      <h5>Basic Styling</h5>
+      <p class="text-muted font-size-sm">
+        The example below is the basic styling of the breadcrumb from Bootstrap.
+      </p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+          <li class="breadcrumb-item"><a href="javascript:void(0)">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </section>
+
+    <hr class="my-5">
+
+    <section>
+      <h5>Custom Styling</h5>
+      <p class="text-muted font-size-sm">
+        The example below is the custom styling of the breadcrumb used by this template.
+      </p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-style1">
+          <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+          <li class="breadcrumb-item"><a href="javascript:void(0)">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </section>
+
+    <hr class="my-5">
+
+    <section>
+      <h5>Custom Divider</h5>
+      <p class="text-muted font-size-sm">
+        The example below is the custom styling of the breadcrumb using different divider.
+      </p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-style2 bg-white">
+          <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+          <li class="breadcrumb-item"><a href="javascript:void(0)">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-style3 bg-white">
+          <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+          <li class="breadcrumb-item"><a href="javascript:void(0)">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </section>
+  </div>
+</div>
+
+<script>
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(null, script).then(() => {
+
+    // your script here
+
+  }).then(() => App.stopLoading())
+</script>

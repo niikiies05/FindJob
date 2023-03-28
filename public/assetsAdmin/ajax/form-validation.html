@@ -1,0 +1,204 @@
+<div class="row">
+  <div class="col">
+
+    <section id="section1">
+      <h5>Simple feedback</h5>
+      <p class="text-muted font-size-sm">
+        Simple feedback using border colors and icons.
+      </p>
+      <div class="card card-style-1" style="max-width: 400px">
+        <div class="card-body">
+          <form method="post" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="fullName1">Full name</label>
+              <input type="text" class="form-control" id="fullName1" placeholder="Full name" value="Arthur Rice" required>
+            </div>
+            <div class="form-group">
+              <label for="email1">Email address</label>
+              <input type="email" class="form-control" id="email1" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-radio">
+                <input type="radio" name="gender1" class="custom-control-input" id="gender1" required>
+                <label class="custom-control-label" for="gender1">Male</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" name="gender1" class="custom-control-input" id="gender2" required>
+                <label class="custom-control-label" for="gender2">Female</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="agreeCheck1" required>
+                <label class="custom-control-label" for="agreeCheck1">Agree to terms and conditions</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section2">
+      <h5>With text feedback</h5>
+      <p class="text-muted font-size-sm">
+        Same as before but added with text feedback.
+      </p>
+      <div class="card card-style-1" style="max-width: 400px">
+        <div class="card-body">
+          <form method="post" class="needs-validation" novalidate>
+            <div class="form-group">
+              <label for="fullName2">Full name</label>
+              <input type="text" class="form-control" id="fullName2" placeholder="Full name" value="Sophie Dean" required>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">This field is required.</div>
+            </div>
+            <div class="form-group">
+              <label for="email2">Email address</label>
+              <input type="email" class="form-control" id="email2" placeholder="Enter email" required>
+              <div class="valid-feedback">Looks good!</div>
+              <div class="invalid-feedback">Please provide a valid email.</div>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-radio">
+                <input type="radio" name="gender2" class="custom-control-input" id="gender3" required>
+                <label class="custom-control-label" for="gender3">Male</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" name="gender2" class="custom-control-input" id="gender4" required>
+                <label class="custom-control-label" for="gender4">Female</label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please choose your gender.</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="agreeCheck2" required>
+                <label class="custom-control-label" for="agreeCheck2">Agree to terms and conditions</label>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">You must agree before signing up.</div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section3">
+      <h5>With tooltip feedback</h5>
+      <p class="text-muted font-size-sm">
+        Swap text feedback with tooltip feedback. Be sure to have a parent with <code>position: relative</code> on it for tooltip positioning.
+      </p>
+      <div class="card card-style-1" style="max-width: 400px">
+        <div class="card-body">
+          <form method="post" class="needs-validation" novalidate>
+            <div class="form-group position-relative">
+              <label for="fullName3">Full name</label>
+              <input type="text" class="form-control" id="fullName3" placeholder="Full name" value="Sophie Dean" required>
+              <div class="invalid-tooltip">This field is required.</div>
+            </div>
+            <div class="form-group position-relative">
+              <label for="email3">Email address</label>
+              <input type="email" class="form-control" id="email3" placeholder="Enter email" required>
+              <div class="invalid-tooltip">Please provide a valid email.</div>
+            </div>
+            <div class="form-group position-relative">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="agreeCheck3" required>
+                <label class="custom-control-label" for="agreeCheck3">Agree to terms and conditions</label>
+                <div class="invalid-tooltip">You must agree before signing up.</div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section id="section4">
+      <h5>Supported elements</h5>
+      <p class="text-muted font-size-sm">
+        Validation styles are available for the following form controls and components.
+      </p>
+      <div class="card card-style-1" style="max-width: 400px">
+        <div class="card-body">
+          <form method="post" class="was-validated">
+            <div class="mb-3">
+              <label for="validationTextarea">Textarea</label>
+              <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+              <div class="invalid-feedback">
+                Please enter a message in the textarea.
+              </div>
+            </div>
+            <div class="custom-control custom-checkbox mb-3">
+              <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+              <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+              <div class="invalid-feedback">Example invalid feedback text</div>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+              <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
+            </div>
+            <div class="custom-control custom-radio mb-3">
+              <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+              <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
+              <div class="invalid-feedback">More example invalid feedback text</div>
+            </div>
+            <div class="form-group">
+              <select class="custom-select" required>
+                <option value="">Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="invalid-feedback">Example invalid custom select feedback</div>
+            </div>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+              <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+              <div class="invalid-feedback">Example invalid custom file feedback</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="col-3 d-none d-xl-block">
+    <div class="nav-section">
+      <label class="text-muted">On This Page</label>
+      <nav id="navSection" class="nav flex-column">
+        <a href="#section1" class="nav-link nav-link-sm">Simple feedback</a>
+        <a href="#section2" class="nav-link nav-link-sm">With text feedback</a>
+        <a href="#section3" class="nav-link nav-link-sm">With tooltip feedback</a>
+        <a href="#section4" class="nav-link nav-link-sm">Supported elements</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<script>
+  var script = [
+    '../js/app.min.js'
+  ]
+  App.loadPlugins(null, script).then(() => {
+
+    // Example starter for disabling form submissions if there are invalid fields
+    $('.needs-validation').on('submit', function (e) {
+      if (this.checkValidity() === false) {
+        e.preventDefault()
+        e.stopPropagation()
+      }
+      this.classList.add('was-validated')
+    })
+
+  }).then(() => App.stopLoading())
+</script>

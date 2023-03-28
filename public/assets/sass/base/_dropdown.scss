@@ -1,0 +1,115 @@
+// The dropdown wrapper (`<div>`)
+.dropup,
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    // Generate the caret automatically
+    &::after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: $caret-width;
+        vertical-align: middle;
+        content: "";
+        border-top: $caret-width solid;
+        border-right: $caret-width solid transparent;
+        border-left: $caret-width solid transparent;
+    }
+
+    // Prevent the focus on the dropdown toggle when closing dropdowns
+    &:focus {
+        outline: 0;
+    }
+}
+
+.dropup {
+    .dropdown-toggle {
+        &::after {
+            border-top: 0;
+            border-bottom: $caret-width solid;
+        }
+    }
+}
+
+// The dropdown menu
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: $zindex-dropdown;
+    display: none; // none by default, but block on "open" of the menu
+    float: left;
+    min-width: $dropdown-min-width;
+    padding: $dropdown-padding-y 0;
+    margin: $dropdown-margin-top 0 0; // override default ul
+    font-size: $font-size-base;
+    color: $body-color;
+    text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+    list-style: none;
+    background-color: $dropdown-bg;
+    background-clip: padding-box;
+    border: $dropdown-border-width solid $dropdown-border-color;
+
+    &.dropdown-line {
+        width: calc(100% - 10px);
+
+        &.has-form {
+            .dropdown-item {
+                font-size: 13px;
+                padding: 8px 12px;
+
+                .custom-control {
+                    display: flex;
+                    align-items: center;
+                }
+
+                a {
+                    font-size: 13px;
+                    padding: 8px 12px;
+                }
+            }
+        }
+
+        > a {
+            font-size: 13px;
+        }
+
+    }
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%; // For `<button>`s
+    clear: both;
+    font-weight: $font-weight-normal;
+    color: $dropdown-link-color;
+    text-align: inherit; // For `<button>`s
+    white-space: nowrap; // prevent links from randomly breaking onto new lines
+    background-color: transparent; // For `<button>`s
+    border: 0; // For `<button>`s
+
+    @include hover-focus {
+        color: $dropdown-link-hover-color;
+        text-decoration: none;
+        @include gradient-bg($dropdown-link-hover-bg);
+    }
+
+    &.active,
+    &:active {
+        color: $dropdown-link-active-color !important;
+        text-decoration: none;
+        @include gradient-bg($dropdown-link-active-bg);
+    }
+
+    &.disabled,
+    &:disabled {
+        color: $dropdown-link-disabled-color;
+        background-color: transparent;
+        // Remove CSS gradients if they're enabled
+        @if $enable-gradients {
+            background-image: none;
+        }
+    }
+}

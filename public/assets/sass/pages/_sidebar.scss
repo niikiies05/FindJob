@@ -1,0 +1,79 @@
+.sidebar{
+  &-modern {
+    &-inner {
+      background: $white;
+      border:$border;
+      .block-title {
+        padding: 15px 15px;
+        border-bottom: $border;
+        position: relative;
+        &.has-arrow {
+          margin-bottom: 5px;
+          &:before {
+            border-color: $border-color transparent transparent;
+            border-style: solid;
+            border-width: 7px;
+            bottom: -14px;
+            //Instead of the line below you could use @include box-sizing($bs)
+            box-sizing: border-box;
+            content: " ";
+            display: block;
+            left: 34px;
+            position: absolute;
+            z-index: 2;
+          }
+          &:after {
+            border-color: $white transparent transparent;
+            border-style: solid;
+            border-width: 6px;
+            bottom: -12px;
+            //Instead of the line below you could use @include box-sizing($bs)
+            box-sizing: border-box;
+            content: " ";
+            display: block;
+            left: 35px;
+            position: absolute;
+            z-index: 2;
+          }
+          &.gray:before {
+            border-color: transparent transparent transparent;
+          }
+        }
+        &.sidebar-header {
+          h5 {
+            line-height: 30px;
+          }
+        }
+        h5 {
+          margin: 0;
+          padding: 0;
+          font-weight: bold;
+          color: $text-color;
+          font-size: 16px;
+          text-transform: uppercase;
+          a {
+            color: $text-color;
+          }
+        }
+      }
+
+      .block-content {
+        padding: 15px 15px;
+      }
+      .list-filter ul  {
+        li a {
+          font-size: 14px;
+          display: flex;
+          justify-content: space-between;
+          &:hover {
+            font-weight: bold;
+            .title {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
